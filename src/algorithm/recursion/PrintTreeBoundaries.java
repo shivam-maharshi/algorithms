@@ -2,7 +2,12 @@ package algorithm.recursion;
 
 import data.structures.BinaryTree;
 
-// Print the boundaries of a tree. I.e. its left nodes, then all its leaves and then all its right nodes.
+/**
+ * Print the boundaries of a tree. I.e. its left nodes, then all its leaves and
+ * then all its right nodes.
+ * 
+ * @author shivam.maharshi
+ */
 public class PrintTreeBoundaries {
 
 	public static void print(BinaryTree<Integer> root) {
