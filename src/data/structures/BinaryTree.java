@@ -116,4 +116,28 @@ public class BinaryTree<V> {
 		System.out.println(isValidBinarySearchTree(root, Integer.MIN_VALUE, Integer.MAX_VALUE));
 	}
 
+	public BinaryTree<V> getRight() {
+		return right;
+	}
+
+	public void setRight(BinaryTree<V> right) {
+		this.right = right;
+	}
+
+	public BinaryTree<V> getLeft() {
+		return left;
+	}
+
+	public void setLeft(BinaryTree<V> left) {
+		this.left = left;
+	}
+
+	public V getValue() {
+		return value;
+	}
+
+	public void setValue(V value) {
+		this.value = value;
+	}
+
 }
