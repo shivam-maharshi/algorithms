@@ -5,24 +5,36 @@ public class NextBigNumber {
 	static int[] num;
 
 	public static void getNext() {
-		int fIndex = 0;
-		for (int i = num.length - 2; i <= 0; i--) {
-			if (num[i] < num[i + 1]) {
-				fIndex = i;
-			}
+		if (num == null) {
+			System.out.println("Invalid input.");
+			return;
 		}
-		for (int i = num.length - 1; i > fIndex; i--) {
-			if (num[i] > num[fIndex]) {
-				swap(i, fIndex);
-			}
+		if (num.length == 1) {
+			System.out.println(num[0]);
+			return;
 		}
-		int i = num.length - 1;
-		int j = fIndex+1;
-		while (i > j) {
-			swap(i,j);
+		int i = num.length - 2;
+		outer: while (i >= 0) {
+			for (int j = num.length - 1; j > i; j--) {
+				if (num[i] < num[j]) {
+					swap(i, j);
+					break outer;
+				}
+				if (i == 0 && j == 1) {
+					System.out.println("This is the maximum number.");
+					return;
+				}
+			}
 			i--;
-			j++;
 		}
+		int j = num.length - 1;
+		++i;
+		while (i < j) {
+			swap(i, j);
+			--j;
+			++i;
+		}
+
 		printNum(num);
 	}
 
@@ -42,7 +54,12 @@ public class NextBigNumber {
 
 	public static void main(String[] args) {
 		NextBigNumber.num = new int[] { 1, 2, 3, 4, 5 };
-		NextBigNumber.getNext();
+		int i = 120;
+		while (i != 0) {
+			--i;
+			System.out.println(i);
+			NextBigNumber.getNext();
+		}
 	}
 
 }
