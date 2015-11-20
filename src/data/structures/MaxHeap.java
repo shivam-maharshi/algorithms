@@ -1,5 +1,10 @@
 package data.structures;
 
+/**
+ * Maximum generic heap.
+ * 
+ * @author shivam.maharshi
+ */
 @SuppressWarnings("unchecked")
 public class MaxHeap<T extends Comparable<T>> {
 
