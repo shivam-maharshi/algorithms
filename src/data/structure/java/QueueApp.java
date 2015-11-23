@@ -7,6 +7,12 @@ import java.util.LinkedList;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
+/**
+ * Play with the usage of the Java data structures. Examine there behavior.
+ * 
+ * @author shivam.maharshi
+ *
+ */
 public class QueueApp {
 
 	// Queue interface. LinkedList implementation.
@@ -60,14 +66,15 @@ public class QueueApp {
 		Deque<Integer> dq = QueueApp.dq;
 		// Operations.
 		dq.addLast(10); // Adds to tail.
-		dq.addFirst(5);  // Adds to head.
+		dq.addFirst(5); // Adds to head.
 		dq.add(20); // Adds to tail.
 		dq.add(15); // Adds to tail.
 		System.out.println(dq.pollFirst()); // Reads and removes from head.
 		System.out.println(dq.pollLast()); // Reads and removes from tail.
 		System.out.println(dq.peekFirst()); // Reads from head.
 		System.out.println(dq.removeFirst()); // Like poll but throws exception.
-		System.out.println(dq.element()); // No first or last here. Reads and removes from head.
+		System.out.println(dq.element()); // No first or last here. Reads and
+											// removes from head.
 	}
 
 }

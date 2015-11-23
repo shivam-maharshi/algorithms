@@ -1,5 +1,9 @@
 package data.structures;
 
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class BinaryTree<V> {
 
 	BinaryTree<V> right;
@@ -18,6 +22,67 @@ public class BinaryTree<V> {
 	public BinaryTree<V> insertRight(V value) {
 		this.right = new BinaryTree<V>(value);
 		return this.right;
+	}
+
+	public static boolean isComplete(BinaryTree<Integer> root) {
+		if (root == null) {
+			return true;
+		}
+		return isComplete(root, 0) < 0 ? false : true;
+	}
+
+	/**
+	 * This is my algorithm. A little complex but more efficient.
+	 */
+	private static int isComplete(BinaryTree<Integer> root, int level) {
+		if (level < 0) {
+			return level;
+		}
+		if (root == null) {
+			return level - 1;
+		}
+		int l = isComplete(root.left, level + 1);
+		int r = isComplete(root.right, level + 1);
+		if (l < r || l - r >= 2) {
+			return -1;
+		} else {
+			return l;
+		}
+	}
+
+	/**
+	 * Do level order traversal of a tree and insert -1 for nulls. If there are
+	 * -1s in the middle of the array / queue then it is not a complete tree
+	 * otherwise if there are no -1s or all are at the end then it is a complete
+	 * tree.
+	 */
+	public static boolean isComplete1(BinaryTree<Integer> root) {
+		boolean res = true;
+		Queue<BinaryTree<Integer>> queue = new LinkedList<BinaryTree<Integer>>();
+		int[] a = new int[(int) Math.pow(2, root.getHeight(root) + 1)];
+		Arrays.fill(a, Integer.MIN_VALUE);
+		queue.add(root);
+		int i = 0;
+		while (!queue.isEmpty()) {
+			BinaryTree<Integer> node = queue.remove();
+			if (node != null) {
+				a[i] = node.value;
+				queue.add(node.left);
+				queue.add(node.right);
+			} else {
+				a[i] = Integer.MIN_VALUE;
+			}
+			i++;
+		}
+		boolean minOcc = false;
+		for (i = 0; i < a.length; i++) {
+			if (minOcc && a[i] != Integer.MIN_VALUE) {
+				return false;
+			} else if (a[i] == Integer.MIN_VALUE) {
+				minOcc = true;
+			}
+		}
+		return res;
 	}
 
 	/*
@@ -82,6 +147,9 @@ public class BinaryTree<V> {
 		inOrderTraversal(node.right);
 	}
 
+	/**
+	 * This will not work. This is incorrect approach.
+	 */
 	public static boolean isValidBinarySearchTree(BinaryTree<Integer> root) {
 		inOrderTraversal(root);
 
@@ -106,14 +174,20 @@ public class BinaryTree<V> {
 
 	public static void main(String[] args) {
 		BinaryTree<Integer> root = new BinaryTree<Integer>(100);
-		root.insertRight(150);
+		BinaryTree<Integer> right = root.insertRight(150);
 		BinaryTree<Integer> left = root.insertLeft(25);
+		left.insertRight(12);
 		left.insertLeft(12);
+		right.insertLeft(12);
+		right.insertRight(13);
 		// System.out.println("Max Height : " + root.maxHeight(root));
 		// System.out.println("Min Height : " + root.minHeight(root));
 		// System.out.println("Is tree balanced : " + root.isBalanced1());
 		// System.out.println(root.isValidBinarySearchTree(root));
-		System.out.println(isValidBinarySearchTree(root, Integer.MIN_VALUE, Integer.MAX_VALUE));
+		// System.out.println(isValidBinarySearchTree(root, Integer.MIN_VALUE,
+		// Integer.MAX_VALUE));
+		System.out.println(isComplete(root));
+		System.out.println(isComplete1(root));
 	}
 
 	public BinaryTree<V> getRight() {
