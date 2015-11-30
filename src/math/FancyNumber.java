@@ -2,7 +2,14 @@ package math;
 
 import java.util.HashMap;
 
-// Find if a number is fancy. A number is fancy when it is rotated by 180 degrees and it still remains the same.
+/**
+ * Find if a number is fancy. A number is fancy when it is rotated by 180
+ * degrees and it still remains the same.
+ * 
+ * Link: http://www.geeksforgeeks.org/check-if-a-given-number-is-fancy/
+ * 
+ * @author shivam.maharshi
+ */
 public class FancyNumber {
 
 	private static HashMap<Integer, Integer> fancyMap = new HashMap<>();

@@ -2,7 +2,11 @@ package math;
 
 import java.util.Arrays;
 
-// Generate all numbers using the same digit as in the given numbers.
+/**
+ *  Generate all numbers using the same digit as in the given numbers.
+ * 
+ * @author shivam.maharshi
+ */
 public class GenerateAllNumbers {
 
 	public static void generate(int[] num) {

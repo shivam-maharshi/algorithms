@@ -1,7 +1,10 @@
 package math;
 
-/* 
- * Given an array with stock prices, return the buying and selling prices to maximize profits.
+/**
+ * Given an array with stock prices, return the buying and selling prices to
+ * maximize profits.
+ * 
+ * @author shivam.maharshi
  */
 public class MaximizeStockProfit {
 
@@ -26,7 +29,7 @@ public class MaximizeStockProfit {
 	}
 
 	public static void main(String[] args) {
-		int[] arr = new int[] {100001, 101001, 100, 200, 1, 50, 100, 1000};
+		int[] arr = new int[] { 100001, 101001, 100, 200, 1, 50, 100, 1000 };
 		System.out.println(MaximizeStockProfit.getBestTransaction(arr));
 	}
 

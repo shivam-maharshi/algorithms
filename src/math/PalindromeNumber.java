@@ -1,6 +1,10 @@
 package math;
 
-// Find if the given number is palindrome.
+/**
+ * Find if the given number is palindrome.
+ * 
+ * @author shivam.maharshi
+ */
 public class PalindromeNumber {
 
 	public static boolean isPalindrome(int n) {

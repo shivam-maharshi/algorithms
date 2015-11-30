@@ -2,7 +2,14 @@ package math;
 
 import java.util.Date;
 
-// Returns a business day date object considering Saturday and Sunday not a business day.
+/**
+ * Returns a business day date object considering Saturday and Sunday not a
+ * business day.
+ * 
+ * Link: http://www.careercup.com/question?id=5760804016095232
+ * 
+ * @author shivam.maharshi
+ */
 public class GetBussinessDate {
 
 	public static Date getBusinessDayFromNow(int days) {

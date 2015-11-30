@@ -1,6 +1,10 @@
 package math;
 
-// Algorithm is called Sieve of Eratosthenes
+/**
+ *  Algorithm is called Sieve of Eratosthenes
+ * 
+ * @author shivam.maharshi
+ */
 public class GeneratePrimeNumbers {
 
 	public static void generateAllPrimeNumbers(int max) {

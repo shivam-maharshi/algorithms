@@ -1,5 +1,8 @@
 package math;
 
+/**
+ * @author shivam.maharshi
+ */
 public class PrintNumbersInLexographicalOrder {
 
 	public static void printLexographicalOrder(int num, int n) {

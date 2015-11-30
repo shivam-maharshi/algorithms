@@ -1,7 +1,9 @@
 package math;
 
-/*
- *  Find the contiguous array largest sum.
+/**
+ * Find the contiguous array largest sum.
+ * 
+ * @author shivam.maharshi
  */
 public class ContiguousArrayLargestSum {
 
@@ -16,9 +18,9 @@ public class ContiguousArrayLargestSum {
 		}
 		return max;
 	}
-	
+
 	public static void main(String[] args) {
-		int[] arr = new int[] {2, 3, -8, -1, 2, 4, -2, 3};
+		int[] arr = new int[] { 2, 3, -8, -1, 2, 4, -2, 3 };
 		System.out.println(ContiguousArrayLargestSum.contiguousArrayLargestSum(arr));
 	}
 

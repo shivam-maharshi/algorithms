@@ -1,13 +1,15 @@
 package math;
 
-/* 
+/**
  * Find the smallest i numbers from a list of n numbers.
+ * 
+ * @author shivam.maharshi
  */
 public class RankSelection {
 
 	public static int[] smallestNumbers(int[] arr, int num) {
 		int[] s = new int[num];
-		int pivot = partition(arr, num, 0, arr.length-1);
+		int pivot = partition(arr, num, 0, arr.length - 1);
 		for (int i = 0; i < pivot; i++) {
 			System.out.println(arr[i]);
 			s[i] = arr[i];

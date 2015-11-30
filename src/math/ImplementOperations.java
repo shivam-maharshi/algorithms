@@ -1,6 +1,11 @@
 package math;
 
-// Implement Subtraction, Multiplication & Division using only addition operation.
+/**
+ * Implement Subtraction, Multiplication & Division using only addition
+ * operation.
+ * 
+ * @author shivam.maharshi
+ */
 public class ImplementOperations {
 
 	public static int negate(int a) {

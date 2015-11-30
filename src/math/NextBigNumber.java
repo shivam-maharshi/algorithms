@@ -1,6 +1,10 @@
 package math;
 
-// Given a number print the next big number using the same digits.
+/**
+ * Given a number print the next big number using the same digits.
+ * 
+ * @author shivam.maharshi
+ */
 public class NextBigNumber {
 	static int[] num;
 
