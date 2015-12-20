@@ -4,7 +4,8 @@ package math;
  * Find out if the given number is multiple of three or not. If the difference
  * between the number of ones in the odd places and number of ones in the even
  * places for the binary representation of a number are a multiple of 3, then so
- * is the number itself.
+ * is the number itself. Same can also be applied to multiples of k, in which
+ * represent it in base k-1.
  * 
  * Link:
  * http://www.geeksforgeeks.org/write-an-efficient-method-to-check-if-a-number-
