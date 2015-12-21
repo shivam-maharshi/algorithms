@@ -4,6 +4,8 @@ package math;
  * Shuffle a deck of card with equal probability for all the cases. Assume pure
  * random generator.
  * 
+ * Link: http://www.geeksforgeeks.org/shuffle-a-given-array/
+ * 
  * @author shivam.maharshi
  */
 public class ShuffleCardDeck {
