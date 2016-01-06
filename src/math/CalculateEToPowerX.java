@@ -1,7 +1,7 @@
 package math;
 
 /**
- * Calculate e^x in the most efficient manner.
+ * Calculate e^x in the most efficient manner. We used Taylor series for it.
  * 
  * Link: http://www.geeksforgeeks.org/program-to-efficiently-calculate-ex/
  * 
