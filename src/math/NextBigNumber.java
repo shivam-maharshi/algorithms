@@ -3,6 +3,8 @@ package math;
 /**
  * Given a number print the next big number using the same digits.
  * 
+ * Link: http://www.geeksforgeeks.org/find-next-greater-number-set-digits/
+ * 
  * @author shivam.maharshi
  */
 public class NextBigNumber {
