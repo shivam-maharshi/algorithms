@@ -34,7 +34,7 @@ public class MColoringProblem {
 				}
 				if (tempC <= max) {
 					if (!solve(i, tempC, graph, sol, max))
-						sol[i] = 0;
+						sol[i] = 0; // This is the backtracking point.
 					else
 						return true;
 				}
