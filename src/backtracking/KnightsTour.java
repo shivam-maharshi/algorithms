@@ -14,6 +14,13 @@ public class KnightsTour {
 	private static int[] xMove = new int[] { -2, -2, -1, -1, 1, 1, 2, 2 };
 	private static int[] yMove = new int[] { -1, 1, -2, 2, -2, 2, -1, 1 };
 
+	/*
+	 * Please note that the naive solution would be to generate all paths from
+	 * beginning till the end and then check if they satisfy the constraint.
+	 * However backtracking is more efficient because it will only go back move
+	 * by move and not start over from the beginning in case of a constraint
+	 * voilation.
+	 */
 	public static void tour(int n, int x, int y) {
 		int[][] board = new int[n][n];
 		board[0][0] = 1;
