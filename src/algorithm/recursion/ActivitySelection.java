@@ -12,7 +12,6 @@ import java.util.Comparator;
  * problem/
  * 
  * @author shivam.maharshi
- *
  */
 public class ActivitySelection {
 

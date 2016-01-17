@@ -6,9 +6,9 @@ import java.util.Queue;
 
 public class BinaryTree<V> {
 
-	BinaryTree<V> right;
-	BinaryTree<V> left;
-	V value;
+	public BinaryTree<V> right;
+	public BinaryTree<V> left;
+	public V value;
 
 	public BinaryTree(V value) {
 		this.value = value;

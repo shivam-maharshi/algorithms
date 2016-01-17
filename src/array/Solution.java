@@ -1,5 +1,10 @@
 package array;
 
+/**
+ * Question in Cloud Era.
+ * 
+ * @author shivam.maharshi
+ */
 public class Solution {
 
 	public String solution(String S, String T) {

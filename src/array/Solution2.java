@@ -4,6 +4,11 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * Question in Cloud Era.
+ * 
+ * @author shivam.maharshi
+ */
 public class Solution2 {
 
 	public int solution(String S) {

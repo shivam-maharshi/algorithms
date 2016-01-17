@@ -6,7 +6,8 @@ import java.util.Comparator;
 import java.util.List;
 
 /**
- * Link: http://www.geeksforgeeks.org/greedy-algorithms-set-2-kruskals-minimum-spanning-tree-mst/
+ * Link: http://www.geeksforgeeks.org/greedy-algorithms-set-2-kruskals-minimum-
+ * spanning-tree-mst/
  * 
  * @author shivam.maharshi
  *

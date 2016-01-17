@@ -1,5 +1,10 @@
 package array;
 
+/**
+ * Question in Cloud Era.
+ * 
+ * @author shivam.maharshi
+ */
 class Solution1 {
 	public int solution(String S) {
 		int res = -1;
