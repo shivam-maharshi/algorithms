@@ -21,4 +21,28 @@ public class Edge {
 		return "Edge [wieght=" + wieght + ", src=" + src + ", des=" + des + "]";
 	}
 
+	public int getWieght() {
+		return wieght;
+	}
+
+	public void setWieght(int wieght) {
+		this.wieght = wieght;
+	}
+
+	public int getSrc() {
+		return src;
+	}
+
+	public void setSrc(int src) {
+		this.src = src;
+	}
+
+	public int getDes() {
+		return des;
+	}
+
+	public void setDes(int des) {
+		this.des = des;
+	}
+
 }

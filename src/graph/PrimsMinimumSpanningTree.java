@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import data.structures.Edge;
+import data.structures.Node;
+
 /**
  * Link:
  * http://www.geeksforgeeks.org/greedy-algorithms-set-5-prims-minimum-spanning-

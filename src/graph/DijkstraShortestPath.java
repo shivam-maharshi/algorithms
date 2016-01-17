@@ -1,5 +1,7 @@
 package graph;
 
+import data.structures.Graph;
+
 /**
  * Given a graph and a source vertex in graph, find shortest paths from source
  * to all vertices in the given graph.
@@ -13,7 +15,7 @@ package graph;
 public class DijkstraShortestPath {
 
 	public static Graph getGraph(int[][] graph) {
-
+		
 	}
 
 }

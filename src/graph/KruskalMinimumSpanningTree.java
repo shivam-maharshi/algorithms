@@ -5,6 +5,10 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+import data.structures.Edge;
+import data.structures.Graph;
+import data.structures.Node;
+
 /**
  * Link: http://www.geeksforgeeks.org/greedy-algorithms-set-2-kruskals-minimum-
  * spanning-tree-mst/
@@ -16,12 +20,12 @@ public class KruskalMinimumSpanningTree {
 
 	public static List<Edge> constructMST(Graph g) {
 		List<Edge> mst = new ArrayList<>();
-		List<Edge> edges = g.edges;
+		List<Edge> edges = g.getEdges();
 		Collections.sort(edges, new WieghtComp());
-		Union u = new Union(g.nodes.size());
+		Union u = new Union(g.getNodes().size());
 		for (Edge e : edges) {
-			if (!u.isConnected(e.des, e.src)) {
-				u.connect(e.des, e.src);
+			if (!u.isConnected(e.getDes(), e.getSrc())) {
+				u.connect(e.getDes(), e.getSrc());
 				mst.add(e);
 			}
 		}
@@ -93,45 +97,7 @@ class WieghtComp implements Comparator<Edge> {
 
 	@Override
 	public int compare(Edge o1, Edge o2) {
-		return o1.wieght < o2.wieght ? -1 : 1;
-	}
-
-}
-
-class Graph {
-
-	List<Node> nodes;
-	List<Edge> edges;
-
-	public Graph(List<Node> nodes, List<Edge> edges) {
-		this.nodes = nodes;
-		this.edges = edges;
-	}
-
-}
-
-class Node {
-	int id;
-
-	public Node(int id) {
-		this.id = id;
-	}
-}
-
-class Edge {
-	int wieght;
-	int src;
-	int des;
-
-	public Edge(int src, int des, int wieght) {
-		this.src = src;
-		this.des = des;
-		this.wieght = wieght;
-	}
-
-	@Override
-	public String toString() {
-		return "Edge [wieght=" + wieght + ", src=" + src + ", des=" + des + "]";
+		return o1.getWieght() < o2.getWieght() ? -1 : 1;
 	}
 
 }
