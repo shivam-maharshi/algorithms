@@ -4,6 +4,11 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * Standard generic representation of a Binary Tree.
+ * 
+ * @author shivam.maharshi
+ */
 public class BinaryTree<V> {
 
 	public BinaryTree<V> right;

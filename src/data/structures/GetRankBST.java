@@ -1,9 +1,11 @@
 package data.structures;
 
-/*
- *  Design a data structure using which we can calculate rank of a number very fast.
+/**
+ * Design a data structure using which we can calculate rank of a number very
+ * fast.
+ * 
+ * @author shivam.maharshi
  */
-
 public class GetRankBST {
 
 	GetRankBST left;
@@ -39,7 +41,7 @@ public class GetRankBST {
 	}
 
 	public int getRank(GetRankBST root, int value) {
-		if ( root == null ) {
+		if (root == null) {
 			// Not present.
 			return -1;
 		}
@@ -51,12 +53,13 @@ public class GetRankBST {
 			return getChildCount(root.left) + getRank(root.right, value);
 		}
 	}
-	
-	public int getChildCount (GetRankBST node) {
-		if (node == null) return -1;
+
+	public int getChildCount(GetRankBST node) {
+		if (node == null)
+			return -1;
 		return node.childCount;
 	}
-	
+
 	public static void main(String[] args) {
 		GetRankBST root = new GetRankBST(100);
 		root.insert(root, 50);

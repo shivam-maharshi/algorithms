@@ -3,8 +3,10 @@ package data.structures;
 import java.util.ArrayList;
 import java.util.List;
 
-/*
+/**
  * This is also called the radix tree, digital tree or prefix tree.
+ * 
+ * @author shivam.maharshi
  */
 public class Trie {
 

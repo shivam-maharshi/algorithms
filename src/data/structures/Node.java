@@ -2,6 +2,11 @@ package data.structures;
 
 import java.util.List;
 
+/**
+ * Standard representation of a Node. Should remove adjNodes from it.
+ * 
+ * @author shivam.maharshi
+ */
 public class Node {
 	private int id;
 	private int level;
@@ -50,5 +55,5 @@ public class Node {
 	public void setState(State state) {
 		this.state = state;
 	}
-	
+
 }

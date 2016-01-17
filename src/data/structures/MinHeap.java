@@ -1,7 +1,7 @@
 package data.structures;
 
 /**
- * Min heap.
+ * Implementation of a generic Min Heap.
  * 
  * @author shivam.maharshi
  */

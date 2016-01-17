@@ -1,14 +1,14 @@
-package algorithm;
+package graph;
 
 import java.util.LinkedList;
 
-import data.structures.Graph;
+import data.structures.GraphComplex;
 import data.structures.Node;
 import data.structures.State;
 
 public class BreadthFirstSearch {
 
-	public static boolean isConnected(Graph graph, Node start, Node end) {
+	public static boolean isConnected(GraphComplex graph, Node start, Node end) {
 		LinkedList<Node> queue = new LinkedList<Node>();
 
 		for (int i = 1; i <= graph.size(); i++) {
@@ -37,7 +37,7 @@ public class BreadthFirstSearch {
 	}
 
 	public static void main(String[] args) {
-		Graph graph = new Graph(Graph.getTestData());
+		GraphComplex graph = new GraphComplex(GraphComplex.getTestData());
 		Node start = graph.get(1);
 		Node end = graph.get(8);
 		System.out.println(BreadthFirstSearch.isConnected(graph, start, end));

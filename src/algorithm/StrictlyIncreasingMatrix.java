@@ -3,7 +3,6 @@ package algorithm;
 /*
  * Find a number in a matrix that is strictly increasing, row and column wise. Print its location.
  */
-
 public class StrictlyIncreasingMatrix {
 
 	public static void findNum(int[][] arr, int num) {

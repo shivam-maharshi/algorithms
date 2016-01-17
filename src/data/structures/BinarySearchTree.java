@@ -1,43 +1,48 @@
 package data.structures;
 
-public class BinarySearchTree {
-	
-	private int value;
-	private BinarySearchTree left;
-	private BinarySearchTree right;
-	
-	public void insert (int value) {
-		BinarySearchTree node = this;
-		while(node!=null) {
-			if(node.value > value) {
-				node = node.left;
-			} else {
-				node = node.right;
-			}
+/**
+ * Standard generic representation of a Binary Search Tree.
+ * 
+ * @author shivam.maharshi
+ */
+public class BinarySearchTree<V> {
+
+	private V value;
+	private BinarySearchTree<V> left;
+	private BinarySearchTree<V> right;
+
+	public void insert(V value) {
+		BinarySearchTree<V> node = this;
+		while (node != null) {
+//			if (false) {
+//				node = node.left;
+//			} else {
+//				node = node.right;
+//			}
 		}
-		if(node == null) {
-			node = new BinarySearchTree();
+		if (node == null) {
+			node = new BinarySearchTree<V>();
 			node.value = value;
 		}
 	}
-	
-	public BinarySearchTree createMinimalHieghtTree(int[] arr) {
-		this.insertIntoNode(arr, 0, arr.length-1);
+
+	public BinarySearchTree<V> createMinimalHieghtTree(V[] arr) {
+		this.insertIntoNode(arr, 0, arr.length - 1);
 		return this;
 	}
-	
-	private void insertIntoNode(int[] arr, int low, int high) {
-		while(low <= high) {
-			int mid = ( low + high ) / 2 ;
-			this.insert(mid);
+
+	private void insertIntoNode(V[] arr, int low, int high) {
+		while (low <= high) {
+			Integer mid = (low + high) / 2;
+			this.insert((V)mid);
 			insertIntoNode(arr, low, mid - 1);
 			insertIntoNode(arr, mid + 1, high);
 		}
 	}
-	
+
 	public static void main(String[] args) {
-		BinarySearchTree root = new BinarySearchTree();
-		int[] arr = new int [] {1,2,3,4,5,6,7,8,9};
+		BinarySearchTree<Integer> root = new BinarySearchTree<Integer>();
+		Integer[] arr = new Integer[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 		root.createMinimalHieghtTree(arr);
 	}
 

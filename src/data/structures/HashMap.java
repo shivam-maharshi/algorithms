@@ -3,6 +3,14 @@ package data.structures;
 import java.util.Iterator;
 import java.util.LinkedList;
 
+/**
+ * Standard representation of a HashMap. Should add resize method.
+ * 
+ * @author shivam.maharshi
+ *
+ * @param <K>
+ * @param <V>
+ */
 public class HashMap<K, V> {
 
 	int size;

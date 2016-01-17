@@ -1,7 +1,7 @@
 package data.structures;
 
 /**
- * Maximum generic heap.
+ * Implementation of a generic Max Heap.
  * 
  * @author shivam.maharshi
  */

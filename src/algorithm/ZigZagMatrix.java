@@ -1,6 +1,10 @@
 package algorithm;
 
-// Parse a matrix in a ZigZag way.
+/**
+ * Parse a matrix in a ZigZag way.
+ * 
+ * @author shivam.maharshi
+ */
 public class ZigZagMatrix {
 
 	public static void zigZagContinous(int[][] mat) {
@@ -37,7 +41,7 @@ public class ZigZagMatrix {
 					col--;
 				}
 			} else if (goSlantUp) {
-				
+
 			}
 		}
 

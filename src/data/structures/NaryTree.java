@@ -2,23 +2,28 @@ package data.structures;
 
 import java.util.List;
 
-public class NaryTree {
+/**
+ * Implementation of a generic NAry Tree.
+ * 
+ * @author shivam.maharshi
+ */
+public class NaryTree<V> {
 
-	private int value;
-	List<NaryTree> nodes;
+	private V value;
+	private List<NaryTree<V>> nodes;
 
-	public NaryTree(int value) {
+	public NaryTree(V value) {
 		this.value = value;
 	}
 
-	public NaryTree getParent() {
+	public NaryTree<V> getParent() {
 		// TODO:
 		return null;
 	}
 
-	public int getDepth(NaryTree node) {
+	public int getDepth(NaryTree<V> node) {
 		int depth = 0;
-		NaryTree root = this;
+		NaryTree<V> root = this;
 		while (root != node) {
 			for (int i = 0; i < nodes.size(); i++) {
 				depth = getDepth(nodes.get(i)) + 1;
@@ -31,7 +36,7 @@ public class NaryTree {
 	 * Logic: Bring the deeper node to the same level. Move both nodes up till
 	 * they are the same.
 	 */
-	public NaryTree getLowestCommonAncestor(NaryTree n1, NaryTree n2) {
+	public NaryTree<V> getLowestCommonAncestor(NaryTree<V> n1, NaryTree<V> n2) {
 		int n1Depth = getDepth(n1);
 		int n2Depth = getDepth(n2);
 		if (n1Depth > n2Depth) {
@@ -48,6 +53,22 @@ public class NaryTree {
 			n2 = n2.getParent();
 		}
 		return n1;
+	}
+
+	public V getValue() {
+		return value;
+	}
+
+	public void setValue(V value) {
+		this.value = value;
+	}
+
+	public List<NaryTree<V>> getNodes() {
+		return nodes;
+	}
+
+	public void setNodes(List<NaryTree<V>> nodes) {
+		this.nodes = nodes;
 	}
 
 }

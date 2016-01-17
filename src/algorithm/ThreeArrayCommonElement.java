@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 // Print the common element in the given three non decreasing arrays.
-
 public class ThreeArrayCommonElement {
 
 	public static List<Point> getCommonPoints(int[] a, int[] b, int[] c) {

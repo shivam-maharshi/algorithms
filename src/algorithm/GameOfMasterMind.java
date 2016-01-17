@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /* 
- * 17.5 - Game of mastermind. Return Return the count of hits and pseudo hits.
+ * 17.5 - Game of mastermind. Return the count of hits and pseudo hits.
  */
 public class GameOfMasterMind {
 

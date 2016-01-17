@@ -3,6 +3,11 @@ package data.structures;
 import java.util.LinkedList;
 import java.util.NoSuchElementException;
 
+/**
+ * Queue to distinguish between Dog & Cat.
+ * 
+ * @author shivam.maharshi
+ */
 public class DogCatQueue {
 
 	private Queue catQueue = new Queue();
