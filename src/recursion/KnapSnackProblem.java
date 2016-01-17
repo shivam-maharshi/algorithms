@@ -1,4 +1,4 @@
-package algorithm.recursion;
+package recursion;
 
 /**
  * Given numbers and their corresponding weights and a given max weight, find

@@ -1,4 +1,4 @@
-package algorithm.recursion;
+package recursion;
 
 public class StringCombinations {
 	private char[] cArr;

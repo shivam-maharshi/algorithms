@@ -1,4 +1,4 @@
-package algorithm.recursion;
+package recursion;
 
 import data.structures.BinaryTree;
 

@@ -1,4 +1,4 @@
-package algorithm.recursion;
+package recursion;
 
 // Print non increasing sequence that sum to the given value.
 public class NonIncreasingSequence {

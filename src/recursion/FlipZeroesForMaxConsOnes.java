@@ -1,4 +1,4 @@
-package algorithm.recursion;
+package recursion;
 
 /**
  * Flip zeroes in the given array for the maximum no. of consecutive number of

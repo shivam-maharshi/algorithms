@@ -1,4 +1,4 @@
-package algorithm.recursion;
+package recursion;
 
 /* 
  * Given an expression with just 1,0,&,|,^, calculate the number of ways to parenthesise it to get the given boolean result value.

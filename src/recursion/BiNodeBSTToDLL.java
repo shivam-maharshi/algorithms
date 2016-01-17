@@ -1,4 +1,4 @@
-package algorithm.recursion;
+package recursion;
 
 /* 
  * Convert a Binary Search Tree in BiNode representation to Doubly Linked List, in place.
