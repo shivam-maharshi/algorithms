@@ -8,6 +8,8 @@ import data.structures.Edge;
 import data.structures.Node;
 
 /**
+ * Create a minimum spanning tree from the given graph using Prims algorithm.
+ * 
  * Link:
  * http://www.geeksforgeeks.org/greedy-algorithms-set-5-prims-minimum-spanning-
  * tree-mst-2/

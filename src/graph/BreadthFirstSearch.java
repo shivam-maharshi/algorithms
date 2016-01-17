@@ -6,6 +6,11 @@ import data.structures.GraphComplex;
 import data.structures.Node;
 import data.structures.State;
 
+/**
+ * Standard Breadth First Search implementation.
+ * 
+ * @author shivam.maharshi
+ */
 public class BreadthFirstSearch {
 
 	public static boolean isConnected(GraphComplex graph, Node start, Node end) {
