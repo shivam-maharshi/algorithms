@@ -11,7 +11,6 @@ import java.util.Queue;
  * Play with the usage of the Java data structures. Examine there behavior.
  * 
  * @author shivam.maharshi
- *
  */
 public class QueueApp {
 
