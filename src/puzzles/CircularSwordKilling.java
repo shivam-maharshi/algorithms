@@ -20,14 +20,11 @@ public class CircularSwordKilling {
 	}
 
 	public static int getMaxPowerOf2Value(int n) {
-		int max = 0;
-		for (int i = 0; i < 32; i++) {
-			if (Math.pow(2, i) > n) {
-				max = i - 1;
-				break;
-			}
+		int num = 1;
+		while (num <= n) {
+			num *= 2;
 		}
-		return (int) Math.pow(2, max);
+		return num / 2;
 	}
 
 	public static void main(String[] args) {
