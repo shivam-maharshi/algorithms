@@ -6,6 +6,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+/**
+ * A representation of graph more efficient and easy to work with.
+ * 
+ * @author shivam.maharshi
+ */
 public class GraphComplex {
 
 	private Map<Integer, Node> graph = new HashMap<Integer, Node>();
@@ -119,7 +124,8 @@ public class GraphComplex {
 		GraphComplex graph = new GraphComplex(getTestData());
 		int id1 = 1, id2 = 8;
 		System.out.println("Distance between nodes : " + graph.getDistance(id1, id2));
-		// System.out.println("Are nodes connected : " + graph.isConnected(id1, id2));
+		// System.out.println("Are nodes connected : " + graph.isConnected(id1,
+		// id2));
 	}
 
 }

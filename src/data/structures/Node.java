@@ -8,6 +8,7 @@ import java.util.List;
  * @author shivam.maharshi
  */
 public class Node {
+	
 	private int id;
 	private int level;
 	private State state;
