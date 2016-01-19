@@ -6,10 +6,12 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 public class SortFile {
 
@@ -29,18 +31,23 @@ public class SortFile {
 				list.add(line);
 			}
 			Collections.sort(list);
-			
+
 			File f = new File("Output.txt");
 			FileWriter fw = new FileWriter(f.getAbsoluteFile());
 			BufferedWriter bw = new BufferedWriter(fw);
-			for(String c : list) {
+			List<String> temp = new ArrayList<>();
+			for (String s : map.keySet()) {
+				temp.add(s);
+			}
+			Collections.sort(temp);
+			for (String c : temp) {
 				bw.write(c + "\n");
 			}
 			bw.close();
 		} catch (Exception e) {
 		}
 	}
-	
+
 	public static void main(String[] args) {
 		sort("C:/Users/Sam/Downloads/Company.txt");
 	}
