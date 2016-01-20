@@ -1,4 +1,4 @@
-package searching.pattern;
+package string;
 
 /**
  * Search the given pattern in all 8 directions for the given word in the given grid.

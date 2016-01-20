@@ -1,4 +1,4 @@
-package searching.pattern;
+package string;
 
 /**
  * Search for pattern in the most efficient way. Worst case O(n) complexity.
@@ -8,7 +8,7 @@ package searching.pattern;
  * 
  * @author shivam.maharshi
  */
-public class StringPatternKMP {
+public class SearchPatternKMP {
 
 	public static void match(String s, String p) {
 		

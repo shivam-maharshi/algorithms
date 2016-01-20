@@ -1,4 +1,4 @@
-package searching.pattern;
+package string;
 
 /**
  * Search pattern naively.
