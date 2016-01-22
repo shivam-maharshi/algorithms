@@ -1,7 +1,10 @@
 package string;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
- * Search pattern naively.
+ * Search pattern naively with worst case complexity O(m*(n-m+1)).
  * 
  * Link:
  * http://www.geeksforgeeks.org/searching-for-patterns-set-1-naive-pattern-
@@ -11,13 +14,14 @@ package string;
  */
 public class SearchPatternNaive {
 
-	public static void match(String s, String p) {
+	public static List<Integer> match(String s, String p) {
+		List<Integer> pl = new ArrayList<Integer>();
 		int start = 0, i = 0, j = 0;
 		if (s.length() >= p.length()) {
 			while (start <= s.length() - p.length()) {
 				if (s.charAt(i) == p.charAt(j)) {
 					if (j == p.length() - 1) {
-						System.out.println("Pattern at : " + start);
+						pl.add(start);
 						j = 0;
 						start++;
 						i = start;
@@ -31,10 +35,13 @@ public class SearchPatternNaive {
 				}
 			}
 		}
+		return pl;
 	}
 
 	public static void main(String[] args) {
-		SearchPatternNaive.match("abcdefabcdgrabcdgr", "abcdgr");
+		List<Integer> pl = SearchPatternNaive.match("abcdefabcdgrabcdgr", "abcdgr");
+		for (int p : pl)
+			System.out.println("Pattern at : " + p);
 	}
 
 }
