@@ -27,7 +27,7 @@ public class DepthFirstSearch {
 	}
 
 	public static void main(String[] args) {
-		dfs(GraphAdjList.getPopulatedGraph(), 2);
+		dfs(GraphAdjList.getPopulatedCyclicGraph(), 2);
 	}
 
 }

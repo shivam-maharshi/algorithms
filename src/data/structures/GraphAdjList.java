@@ -43,7 +43,7 @@ public class GraphAdjList {
 		return adjList[v];
 	}
 
-	public static GraphAdjList getPopulatedGraph() {
+	public static GraphAdjList getPopulatedCyclicGraph() {
 		GraphAdjList g = new GraphAdjList(4);
 		g.addEdge(0, 1);
 		g.addEdge(0, 2);
@@ -51,6 +51,17 @@ public class GraphAdjList {
 		g.addEdge(2, 0);
 		g.addEdge(2, 3);
 		g.addEdge(3, 3);
+		return g;
+	}
+
+	public static GraphAdjList getPopulatedNonCyclicGraph() {
+		GraphAdjList g = new GraphAdjList(4);
+		g.addEdge(0, 1);
+		g.addEdge(0, 2);
+		g.addEdge(0, 3);
+		g.addEdge(1, 2);
+		g.addEdge(1, 3);
+		g.addEdge(2, 3);
 		return g;
 	}
 
