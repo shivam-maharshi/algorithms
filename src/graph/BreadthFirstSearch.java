@@ -17,6 +17,7 @@ import data.structures.State;
  */
 public class BreadthFirstSearch {
 
+	// O(E+V)
 	public static boolean isConnected(GraphComplex graph, Node start, Node end) {
 		LinkedList<Node> queue = new LinkedList<Node>();
 
@@ -64,10 +65,10 @@ public class BreadthFirstSearch {
 	}
 
 	public static void main(String[] args) {
-		 GraphComplex g = GraphComplex.getPopulatedGraph();
-		 Node start = g.get(1);
-		 Node end = g.get(8);
-		 System.out.println(BreadthFirstSearch.isConnected(g, start, end));
+		GraphComplex g = GraphComplex.getPopulatedGraph();
+		Node start = g.get(1);
+		Node end = g.get(8);
+		System.out.println(BreadthFirstSearch.isConnected(g, start, end));
 		bfs(GraphAdjList.getPopulatedCyclicDirectedGraph(), 2);
 	}
 

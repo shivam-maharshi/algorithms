@@ -11,13 +11,10 @@ import data.structures.GraphAdjList;
  */
 public class DetectCycleInDirectedGraph {
 
+	// O(E+V)
 	public static boolean isCyclic(GraphAdjList graph) {
-		for (int i = 0; i < graph.size(); i++) {
-			boolean[] visited = new boolean[graph.size()];
-			if (isCyclic(graph, i, visited))
-				return true;
-		}
-		return false;
+		boolean[] visited = new boolean[graph.size()];
+		return isCyclic(graph, 0, visited);
 	}
 
 	private static boolean isCyclic(GraphAdjList graph, int v, boolean[] visited) {

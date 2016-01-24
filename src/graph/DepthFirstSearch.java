@@ -11,6 +11,7 @@ import data.structures.GraphAdjList;
  */
 public class DepthFirstSearch {
 
+	// O(E+V)
 	public static void dfs(GraphAdjList graph, int v) {
 		boolean[] visited = new boolean[graph.size()];
 		dfs(graph, v, visited);
