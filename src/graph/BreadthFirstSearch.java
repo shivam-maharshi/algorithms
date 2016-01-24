@@ -1,13 +1,17 @@
 package graph;
 
 import java.util.LinkedList;
+import java.util.Queue;
 
+import data.structures.GraphAdjList;
 import data.structures.GraphComplex;
 import data.structures.Node;
 import data.structures.State;
 
 /**
  * Standard Breadth First Search implementation.
+ * 
+ * Link: http://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/
  * 
  * @author shivam.maharshi
  */
@@ -41,11 +45,30 @@ public class BreadthFirstSearch {
 		return false;
 	}
 
+	// BFS method for Graph in Adjacency List Representation.
+	public static void bfs(GraphAdjList graph, int v) {
+		boolean[] visited = new boolean[graph.size()];
+		Queue<Integer> q = new LinkedList<>();
+		q.add(v);
+		while (!q.isEmpty()) {
+			int ver = q.poll();
+			visited[ver] = true;
+			System.out.print(ver + " ");
+			LinkedList<Integer> adjNodes = graph.getAdjList(ver);
+			for (int i = 0; i < adjNodes.size(); i++) {
+				if (!visited[adjNodes.get(i)]) {
+					q.add(adjNodes.get(i));
+				}
+			}
+		}
+	}
+
 	public static void main(String[] args) {
-		GraphComplex graph = new GraphComplex(GraphComplex.getTestData());
-		Node start = graph.get(1);
-		Node end = graph.get(8);
-		System.out.println(BreadthFirstSearch.isConnected(graph, start, end));
+		 GraphComplex g = GraphComplex.getPopulatedGraph();
+		 Node start = g.get(1);
+		 Node end = g.get(8);
+		 System.out.println(BreadthFirstSearch.isConnected(g, start, end));
+		bfs(GraphAdjList.getPopulatedGraph(), 2);
 	}
 
 }
