@@ -120,6 +120,10 @@ public class GraphComplex {
 		return adjacencyMap;
 	}
 
+	public static GraphComplex getPopulatedGraph() {
+		return new GraphComplex(getTestData());
+	}
+
 	public static void main(String[] args) {
 		GraphComplex graph = new GraphComplex(getTestData());
 		int id1 = 1, id2 = 8;
