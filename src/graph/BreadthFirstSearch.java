@@ -68,7 +68,7 @@ public class BreadthFirstSearch {
 		 Node start = g.get(1);
 		 Node end = g.get(8);
 		 System.out.println(BreadthFirstSearch.isConnected(g, start, end));
-		bfs(GraphAdjList.getPopulatedCyclicGraph(), 2);
+		bfs(GraphAdjList.getPopulatedCyclicDirectedGraph(), 2);
 	}
 
 }

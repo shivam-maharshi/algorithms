@@ -34,8 +34,8 @@ public class DetectCycleInDirectedGraph {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(isCyclic(GraphAdjList.getPopulatedCyclicGraph()));
-		System.out.println(isCyclic(GraphAdjList.getPopulatedNonCyclicGraph()));
+		System.out.println(isCyclic(GraphAdjList.getPopulatedCyclicDirectedGraph()));
+		System.out.println(isCyclic(GraphAdjList.getPopulatedNonCyclicDirectedGraph()));
 	}
 
 }
