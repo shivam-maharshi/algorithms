@@ -17,7 +17,7 @@ import java.util.Stack;
 public class TopologicalSorting {
 
 	// Complexity is O(V+E)
-	public static void sort(int[][] adjList) {
+	public static Stack<Integer> sort(int[][] adjList) {
 		Stack<Integer> stack = new Stack<>();
 		boolean[] visited = new boolean[adjList.length];
 		for (int i = 0; i < adjList.length; i++) {
@@ -27,7 +27,7 @@ public class TopologicalSorting {
 				stack.push(i);
 			}
 		}
-		printSol(stack);
+		return stack;
 	}
 
 	private static void printSol(Stack<Integer> stack) {
@@ -48,8 +48,8 @@ public class TopologicalSorting {
 	public static void main(String[] args) {
 		int[][] graph = { { 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 1, 0, 0 }, { 0, 1, 0, 0, 0, 0 },
 				{ 1, 1, 0, 0, 0, 0 }, { 1, 0, 1, 0, 0, 0 } };
-		sort(graph);
-		;
+		Stack<Integer> stack = sort(graph);
+		printSol(stack);
 	}
 
 }
