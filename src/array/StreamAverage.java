@@ -5,6 +5,8 @@ package array;
  * last k numbers. If received less than k numbers than return average of only
  * those numbers.
  * 
+ * Link: http://www.geeksforgeeks.org/average-of-a-stream-of-numbers/
+ * 
  * @author shivam.maharshi
  */
 public class StreamAverage {
@@ -24,7 +26,7 @@ public class StreamAverage {
 			if (touchedK) {
 				avg = (avg * k - store[i] + stream[j]) / k;
 			} else {
-				avg = (avg * (j) + stream[j]) / ( j + 1);
+				avg = (avg * (j) + stream[j]) / (j + 1);
 			}
 			System.out.println(avg);
 			store[i] = stream[j];

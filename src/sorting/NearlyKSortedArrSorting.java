@@ -1,5 +1,10 @@
-package algorithm;
+package sorting;
 
+/**
+ * 
+ * @author shivam.maharshi
+ *
+ */
 public class NearlyKSortedArrSorting {
 
 	/*

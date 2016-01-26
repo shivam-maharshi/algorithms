@@ -1,4 +1,4 @@
-package algorithm;
+package sorting;
 
 public class WaveSorting {
 

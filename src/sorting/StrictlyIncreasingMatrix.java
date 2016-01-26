@@ -1,7 +1,13 @@
-package algorithm;
+package sorting;
 
-/*
- * Find a number in a matrix that is strictly increasing, row and column wise. Print its location.
+/**
+ * Find a number in a matrix that is strictly increasing, row and column wise.
+ * Print its location.
+ * 
+ * Link: http://www.geeksforgeeks.org/search-in-row-wise-and-column-wise-sorted-
+ * matrix/
+ * 
+ * @author shivam.maharshi
  */
 public class StrictlyIncreasingMatrix {
 

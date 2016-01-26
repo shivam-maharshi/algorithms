@@ -3,8 +3,10 @@ package algorithm;
 import java.util.HashMap;
 import java.util.Map;
 
-/* 
- * 17.5 - Game of mastermind. Return the count of hits and pseudo hits.
+/**
+ * 17.5 - Game of master mind. Return the count of hits and pseudo hits.
+ * 
+ * @author shivam.maharshi
  */
 public class GameOfMasterMind {
 
@@ -18,7 +20,7 @@ public class GameOfMasterMind {
 						|| (sMap.containsKey(guess.charAt(i)) && !sMap.get(guess.charAt(i)))) {
 					sMap.put(guess.charAt(i), true);
 					hits++;
-				} 
+				}
 			} else {
 				sMap.put(solution.charAt(i), false);
 			}

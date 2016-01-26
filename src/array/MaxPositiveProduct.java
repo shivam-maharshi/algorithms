@@ -7,7 +7,6 @@ package array;
  * Link: http://www.careercup.com/question?id=5203451533328384
  * 
  * @author shivam.maharshi
- *
  */
 public class MaxPositiveProduct {
 

@@ -1,6 +1,14 @@
 package algorithm;
 
-// Given a set of characters, print all combinations of length k.
+/**
+ * Given a set of characters, print all combinations of length k.
+ * 
+ * Link:
+ * http://www.geeksforgeeks.org/print-all-possible-combinations-of-r-elements-in
+ * -a-given-array-of-size-n/
+ * 
+ * @author shivam.maharshi
+ */
 public class AllCombinationOfLength {
 
 	public static void print(char[] c, int k, int index, String s) {
@@ -14,7 +22,7 @@ public class AllCombinationOfLength {
 	}
 
 	public static void main(String[] args) {
-		char[] c = new char[] { 'a', 'b', 'c'};
+		char[] c = new char[] { 'a', 'b', 'c' };
 		print(c, 2, 0, "");
 	}
 

@@ -3,7 +3,13 @@ package algorithm;
 import java.util.ArrayList;
 import java.util.List;
 
-// Print the common element in the given three non decreasing arrays.
+/**
+ * Print the common element in the given three non decreasing arrays.
+ * 
+ * Link: http://www.geeksforgeeks.org/find-common-elements-three-sorted-arrays/
+ * 
+ * @author shivam.maharshi
+ */
 public class ThreeArrayCommonElement {
 
 	public static List<Point> getCommonPoints(int[] a, int[] b, int[] c) {

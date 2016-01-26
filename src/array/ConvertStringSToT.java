@@ -1,11 +1,14 @@
 package array;
 
 /**
- * Question in Cloud Era.
+ * Check whether a given string s can be converter to string t with maximum one
+ * operation. It can be either Insertion, Deletion or Swapping.
+ * 
+ * Source: Cloud Era
  * 
  * @author shivam.maharshi
  */
-public class Solution {
+public class ConvertStringSToT {
 
 	public String solution(String S, String T) {
 		if (S.equals(T)) {
@@ -60,8 +63,9 @@ public class Solution {
 			if (!insertionUnsuccessful) {
 				return "INSERT " + c;
 			}
-		} {
-			//TODO: swapping
+		}
+		{
+			// TODO: swapping
 		}
 		return "IMPOSSIBLE";
 	}

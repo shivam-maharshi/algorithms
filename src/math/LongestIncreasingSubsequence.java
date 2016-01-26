@@ -1,14 +1,17 @@
 package math;
 
 /**
- * Find the length of the longest increasing sub sequence.
+ * Find the length of the longest increasing sub sequence. The idea is a greedy
+ * approach. Given an index i, if for any index j less than i, has longest
+ * increasing subsequence of length N, then the longest increasing subsequence
+ * of i will at least be length of the subsequence till j plus one, if a[i] >
+ * a[j].
  *
  * @author shivam.maharshi
  */
 public class LongestIncreasingSubsequence {
 
 	// Find out the longest common subsequence in an int array.
-
 	public static int longIncreasingSequence(int[] arr) {
 		int len = arr.length;
 		int[] dp = new int[len];

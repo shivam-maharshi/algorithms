@@ -1,5 +1,12 @@
 package algorithm;
 
+/**
+ * Find the maximum sum in the given circular array.
+ * 
+ * Link: http://www.geeksforgeeks.org/maximum-contiguous-circular-sum/
+ * 
+ * @author shivam.maharshi
+ */
 public class MaximumSumCircularArray {
 
 	public static int circularArrayMaximumSum(int[] arr, int m) {

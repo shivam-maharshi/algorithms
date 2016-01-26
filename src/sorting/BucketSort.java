@@ -1,4 +1,4 @@
-package algorithm;
+package sorting;
 
 import java.util.Arrays;
 
@@ -31,8 +31,8 @@ public class BucketSort {
 	}
 
 	public static void main(String[] args) {
-		int maxVal = 5;
-		int[] data = { 5, 3, 0, 2, 4, 1, 0, 5, 2, 3, 1, 4 };
+		int maxVal = 15;
+		int[] data = { 5, 3, 0, 2, 4, 1, 0, 15, 2, 3, 1, 14 };
 
 		System.out.println("Before: " + Arrays.toString(data));
 		sort(data, maxVal);

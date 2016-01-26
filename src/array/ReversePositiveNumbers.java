@@ -1,6 +1,10 @@
 package array;
 
-// Given an array reverse the consecutive positive numbers between -ve numbers.
+/**
+ * Given an array reverse the consecutive positive numbers between -ve numbers.
+ * 
+ * @author shivam.maharshi
+ */
 public class ReversePositiveNumbers {
 
 	public static int[] reverse(int[] arr) {
@@ -11,10 +15,10 @@ public class ReversePositiveNumbers {
 		while (j < arr.length) {
 			if (arr[j] <= 0) {
 				if (i != j - 1) {
-					if(arr[i]<=0) {
+					if (arr[i] <= 0) {
 						i++;
 					}
-					reverse(arr, i, j-1);
+					reverse(arr, i, j - 1);
 				}
 				/*
 				 * Print it or whatever because the array has already been

@@ -6,11 +6,12 @@ import data.structures.MinHeap;
 
 /**
  * Write the best way to merge M sorted array streams.
+ * 
  * Link: http://www.geeksforgeeks.org/merge-k-sorted-arrays/
  * 
  * @author shivam.maharshi
  */
-public class MergeArrays {
+public class MergeKSortedArrays {
 
 	public static int[] mergeArray(List<int[]> arrays, int total) {
 		int[] res = new int[total];

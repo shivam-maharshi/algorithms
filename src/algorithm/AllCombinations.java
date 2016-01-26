@@ -3,6 +3,9 @@ package algorithm;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author shivam.maharshi
+ */
 public class AllCombinations {
 	
 	public static void printAllSets(char[] c) {

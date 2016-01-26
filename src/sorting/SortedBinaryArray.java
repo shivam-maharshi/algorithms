@@ -1,6 +1,6 @@
-package algorithm;
+package sorting;
 
-/*
+/**
  * Count 1's in a sorted binary array. Like - arr = [1,1,1,1,1,0,0,0,0,0]
  */
 public class SortedBinaryArray {

@@ -1,7 +1,10 @@
-package algorithm;
+package sorting;
 
-/* 
- * Return the indices m, n of the array, which when sorted, the whole array will be sorted. Minimize m & n.
+/**
+ * Return the indices m, n of the array, which when sorted, the whole array will
+ * be sorted. Minimize m & n.
+ * 
+ * @author shivam.maharshi
  */
 public class IndicesToSortCompleteArray {
 
@@ -18,7 +21,7 @@ public class IndicesToSortCompleteArray {
 				break;
 			}
 		}
-		for (int j = arr.length - 1; j >=0; j--) {
+		for (int j = arr.length - 1; j >= 0; j--) {
 			if (arr[j] < max) {
 				result.higher = j;
 				break;

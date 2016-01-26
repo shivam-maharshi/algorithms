@@ -1,4 +1,4 @@
-package algorithm;
+package sorting;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -6,12 +6,15 @@ import java.util.List;
 
 import math.LongestIncreasingSubsequence;
 
-/*
- * Find the largest sequence of people that could be made in increasing order of their height and weight.
+/**
+ * Find the largest sequence of people that could be made in increasing order of
+ * their height and weight.
+ * 
+ * @author shivam.maharshi
  */
 public class LargestSequenceTwoAttributes {
 
-	// This is a very sharp question of longest subsequence.
+	// This is a very sharp and imp question of longest subsequence.
 	public static int findLargestSequenceNum(List<P> list) {
 		Collections.sort(list);
 		int len = list.size();

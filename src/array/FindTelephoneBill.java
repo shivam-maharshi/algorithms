@@ -5,11 +5,13 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * Question in Cloud Era.
+ * Find the bill of telephone according to some rules.
+ * 
+ * Source: Cloud Era
  * 
  * @author shivam.maharshi
  */
-public class Solution2 {
+public class FindTelephoneBill {
 
 	public int solution(String S) {
 		String[] log = S.split("\n");
@@ -93,7 +95,8 @@ public class Solution2 {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(new Solution2().solution("00:01:07,400-234-090\n00:05:01,701-080-080\n00:05:00,400-234-090"));
+		System.out
+				.println(new FindTelephoneBill().solution("00:01:07,400-234-090\n00:05:01,701-080-080\n00:05:00,400-234-090"));
 	}
 
 }

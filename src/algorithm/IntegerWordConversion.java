@@ -3,14 +3,19 @@ package algorithm;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Cracking the coding interview.
+ * 
+ * @author shivam.maharshi
+ */
 public class IntegerWordConversion {
-	static String[] digit = new String[] { " zero ", " one", " two", " three", " four", " five", " six", " seven", " eight",
-			" nine" };
+	static String[] digit = new String[] { " zero ", " one", " two", " three", " four", " five", " six", " seven",
+			" eight", " nine" };
 	static String[] een = new String[] { "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen",
 			"seventeen", "eighteen", "nineteen" };
 	static String[] second = new String[] { "", "ten", "twenty", "thirty", "forty", "fifty", "sixty", "seventy",
 			"eighty", "ninety" };
-	static String[] big = new String[] {"", " thousand ", " million ", " billion " };
+	static String[] big = new String[] { "", " thousand", " million", " billion" };
 
 	// Convert an integer to word.
 
@@ -55,7 +60,7 @@ public class IntegerWordConversion {
 			list.add(hund);
 		}
 	}
-	
+
 	public static void main(String[] args) {
 		System.out.println(IntegerWordConversion.convertWord(123456789));
 	}

@@ -3,6 +3,8 @@ package algorithm;
 /**
  * Parse a matrix in a ZigZag way.
  * 
+ * Link: http://www.geeksforgeeks.org/print-matrix-diagonally/
+ * 
  * @author shivam.maharshi
  */
 public class ZigZagMatrix {

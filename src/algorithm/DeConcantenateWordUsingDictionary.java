@@ -3,10 +3,14 @@ package algorithm;
 import java.util.HashMap;
 import java.util.Map;
 
-/* 
- * Try to recover the spaces between the words of a sentence using dictionary. Problem is, it doesn’t have entries for names, which might be present in the sentences.
+/**
+ * Try to recover the spaces between the words of a sentence using dictionary.
+ * Problem is, it doesn’t have entries for names, which might be present in the
+ * sentences.
  * 
  * Input: timher. Output: tim her.
+ * 
+ * @author shivam.maharshi
  */
 public class DeConcantenateWordUsingDictionary {
 

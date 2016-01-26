@@ -1,6 +1,11 @@
-package algorithm;
+package sorting;
 
-// Assumes uniform distribution of numbers. Gives average case O(log(log(n))). Given numbers are sorted too.
+/**
+ * Assumes uniform distribution of numbers. Gives average case O(log(log(n))).
+ * Given numbers are sorted too.
+ * 
+ * @author shivam.maharshi
+ */
 public class InterpolationSearch {
 
 	public static int interpolationSearch(int[] arr, int key) {
