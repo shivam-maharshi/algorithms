@@ -12,6 +12,7 @@ import java.util.TreeMap;
  */
 public class NthSmallestMulFromSet {
 
+	// O(n*log(m)). M is size of set.
 	public static int get(int[] set, int n) {
 		TreeMap<Integer, Integer> map = new TreeMap<>();
 		for (int a : set) {
@@ -34,7 +35,7 @@ public class NthSmallestMulFromSet {
 	}
 
 	public static void main(String[] args) {
-		int[] set = { 4, 6 };
+		int[] set = { 2, 3 };
 		get(set, 6);
 	}
 
