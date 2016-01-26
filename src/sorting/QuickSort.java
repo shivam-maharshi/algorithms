@@ -18,20 +18,23 @@ public class QuickSort {
 		if (l < h) {
 			// int p = lowPar(a, l, h);
 			// int p = highPar(a, l, h);
-			int p = midPar(a, l, h);
+			// int p = midPar(a, l, h);
+			int p = randPar(a, l, h);
 			sort(a, l, p - 1);
 			sort(a, p + 1, h);
 		}
 	}
 
 	// This is partitioning around the median element as pivot.
+	// This has fixed O(nLog(n)) worst case complexity.
 	private static int medPar(int[] a, int l, int h) {
+		// TODO:
 		return 0;
 	}
-	
-	// This is partitioning around mid element as pivot.
-	private static int midPar(int[] a, int l, int h) {
-		int pivot = l + ((h - l) / 2);
+
+	// This is partitioning around a random element as pivot.
+	private static int randPar(int[] a, int l, int h) {
+		int pivot = ((int) ((h - l) * Math.random())) + l;
 		int val = a[pivot];
 		int i = l;
 		int j = h;
@@ -46,7 +49,27 @@ public class QuickSort {
 				j--;
 			}
 		}
-		return i - 1;
+		return i;
+	}
+
+	// This is partitioning around mid element as pivot.
+	private static int midPar(int[] a, int l, int h) {
+		int pivot = (l + h) / 2;
+		int val = a[pivot];
+		int i = l;
+		int j = h;
+		while (i < j) {
+			if (a[i] < val) {
+				i++;
+			} else if (a[j] > val) {
+				j--;
+			} else {
+				swap(a, i, j);
+				i++;
+				j--;
+			}
+		}
+		return i;
 	}
 
 	// This is partitioning around the last element as pivot.
