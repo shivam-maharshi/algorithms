@@ -1,5 +1,7 @@
 package data.structures;
 
+import java.lang.reflect.Array;
+
 /**
  * Implementation of a generic Min Heap.
  * 
@@ -11,9 +13,9 @@ public class MinHeap<T extends Comparable<T>> {
 	int size;
 
 	@SuppressWarnings("unchecked")
-	public MinHeap(int capacity) {
+	public MinHeap(Class<T> c, int capacity) {
 		// Start index with 1.
-		this.a = (T[]) new Object[capacity + 1];
+		this.a = (T[]) Array.newInstance(c, capacity + 1);
 	}
 
 	public void add(T n) {
@@ -37,7 +39,7 @@ public class MinHeap<T extends Comparable<T>> {
 	}
 
 	public T extractMin() {
-		if (size == 1) {
+		if (size == 0) {
 			throw new RuntimeException("Heap Empty.");
 		}
 		T res = a[1];
@@ -49,7 +51,7 @@ public class MinHeap<T extends Comparable<T>> {
 
 	// Satisfy the heap property for all the nodes. Complexity is n(log(n)).
 	private void buildHeap() {
-		for (int i = size / 2; i >= 1; i--) {
+		for (int i = (((int) size) / 2); i >= 1; i--) {
 			minHeapify(i); // Complexity is log(n).
 		}
 	}
@@ -57,12 +59,12 @@ public class MinHeap<T extends Comparable<T>> {
 	private void minHeapify(int i) {
 		int min = i;
 		// Left
-		if (a[2 * i].compareTo(a[i]) == -1) {
+		if ((2 * i <= size) && a[2 * i].compareTo(a[i]) == -1) {
 			min = 2 * i;
 		}
 		// Right
-		if (a[2 * i + 1].compareTo(a[i]) == -1) {
-			min = 2 * i + 1;
+		if ((2 * i + 1 < size) && a[(2 * i) + 1].compareTo(a[min]) == -1) {
+			min = (2 * i) + 1;
 		}
 		if (min != i) {
 			T temp = a[min];
@@ -71,6 +73,21 @@ public class MinHeap<T extends Comparable<T>> {
 			// This is like sifting down.
 			minHeapify(min);
 		}
+	}
+
+	public static void main(String[] args) {
+		MinHeap<Integer> heap = new MinHeap<>(Integer.class, 5);
+		heap.add(5);
+		heap.add(4);
+		heap.add(3);
+		heap.add(2);
+		heap.add(1);
+
+		System.out.println(heap.extractMin());
+		System.out.println(heap.extractMin());
+		System.out.println(heap.extractMin());
+		System.out.println(heap.extractMin());
+		System.out.println(heap.extractMin());
 	}
 
 }
