@@ -11,7 +11,7 @@ package sorting;
 public class FindKClosestElement {
 
 	public static void find(int[] a, int n, int k) {
-		int index = getIndex(a, n);
+		int index = BinarySearch.find(a, n);
 		int[] res = new int[k];
 		int i = index + 1, j = index - 1;
 		int count = 0;
@@ -37,21 +37,6 @@ public class FindKClosestElement {
 		}
 		for (int num : res)
 			System.out.print(num + " ");
-	}
-
-	// Return index of n by binary search.
-	private static int getIndex(int[] a, int n) {
-		int l = 0, h = a.length - 1;
-		while (h >= l) {
-			int mid = ((l + h) / 2);
-			if (a[mid] == n)
-				return mid;
-			else if (a[mid] > n)
-				h = mid - 1;
-			else
-				l = mid + 1;
-		}
-		return -1; // Never reachable.
 	}
 
 	public static void main(String[] args) {
