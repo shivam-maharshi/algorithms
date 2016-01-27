@@ -9,11 +9,8 @@ package sorting;
  */
 public class MedianOfTwoSortedArr {
 
+	// Handles both odd and even.
 	public static int median(int[] a, int[] b) {
-		return median(a, b, 0, a.length, 0, b.length);
-	}
-
-	public static int m(int[] a, int[] b) {
 		int alen = a.length, blen = b.length;
 		boolean even = false;
 		if ((alen + blen) % 2 == 0) {
@@ -42,7 +39,7 @@ public class MedianOfTwoSortedArr {
 	}
 
 	// Assuming even number of elements.
-	private static int median(int[] a, int[] b, int al, int ah, int bl, int bh) {
+	public static int median(int[] a, int[] b, int al, int ah, int bl, int bh) {
 		if ((ah - al) == 1 && (bh - bl) == 1)
 			return (Math.max(a[al], b[bl]) + Math.min(a[al + 1], b[bl + 1])) / 2;
 		int am = al + (ah - al) / 2;
@@ -58,8 +55,8 @@ public class MedianOfTwoSortedArr {
 	public static void main(String[] args) {
 		int[] a = { 1, 12, 15, 26, 38 };
 		int[] b = { 2, 13, 17, 30 };
-		// System.out.println(median(a, b));
-		System.out.println(m(a, b));
+		// System.out.println(median(a, b, 0, a.length, 0, b.length));
+		System.out.println(median(a, b));
 	}
 
 }
