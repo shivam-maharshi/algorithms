@@ -6,8 +6,11 @@ package bit;
 
 public class MaxNumberWithoutComparison {
 
-	public static int getMax(int a, int b) {
-		return 0;
+	public static int max(int x, int y) {
+		int z = x - y;
+		int i = (z >> 31) & 0x1;
+		int max = x - i * z;
+		return max;
 	}
 
 	int flip(int a) {
@@ -19,7 +22,7 @@ public class MaxNumberWithoutComparison {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(Integer.toBinaryString((-128)));
+		System.out.println(max(10, 5));
 	}
 
 }

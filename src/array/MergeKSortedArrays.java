@@ -15,7 +15,7 @@ public class MergeKSortedArrays {
 
 	public static int[] mergeArray(List<int[]> arrays, int total) {
 		int[] res = new int[total];
-		MinHeap<Pair> h = new MinHeap<Pair>(arrays.size());
+		MinHeap<Pair> h = new MinHeap<Pair>(Pair.class, arrays.size());
 		int[] pointers = new int[arrays.size()];
 		int count = 0;
 		for (int i = 0; i < arrays.size(); i++) {
