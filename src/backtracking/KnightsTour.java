@@ -19,7 +19,7 @@ public class KnightsTour {
 	 * beginning till the end and then check if they satisfy the constraint.
 	 * However backtracking is more efficient because it will only go back move
 	 * by move and not start over from the beginning in case of a constraint
-	 * voilation.
+	 * violation.
 	 */
 	public static void tour(int n, int x, int y) {
 		int[][] board = new int[n][n];
