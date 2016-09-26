@@ -29,6 +29,7 @@ public class MinimumEditDistance {
 		}
 	}
 
+	// Solution using DP. Time Complexity: O(n*m) max computations.
 	private static int get(String a, String b, int m, int n, int[][] dp) {
 		if (a == null || m == 0)
 			return n;
