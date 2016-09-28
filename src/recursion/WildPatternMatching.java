@@ -3,7 +3,7 @@ package recursion;
 /**
  * Return true if a string follows a given wild card pattern.
  * 
- * Link:
+ * Link: http://www.geeksforgeeks.org/wildcard-pattern-matching/
  * 
  * @author shivam.maharshi
  */
