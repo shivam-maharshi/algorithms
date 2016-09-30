@@ -1,8 +1,5 @@
 package leetcode;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * Link: https://leetcode.com/problems/burst-balloons/
  * 
@@ -11,50 +8,53 @@ import java.util.List;
 public class BurstBalloon {
 
   public static void main(String[] args) {
-    int[] a = { 3, 9, 5, 7 };
-    System.out.println(a.length);
-    List<Integer> list = new ArrayList<Integer>();
-    for (int aa : a)
-      list.add(aa);
-    System.out.println(getMax(list));
+    int[] a = {};
+    System.out.println(maxCoins(a));
   }
 
-  /*
-   * This works but has a complexity of O(n!). So it sucks and we must do DP to
-   * improve complexity which will yield O(n^3) solution.
-   */
-  public static int getMax(List<Integer> list) {
-    return getMax(list, -1);
-  }
-
-  public static int getMax(List<Integer> list, int b) {
-    if (list.size() == 1)
-      return list.get(0);
-
-    int max = 0, temp = 0, element = 0;
-    if (b != -1) { // Non start of recursion.
-      max = getValue(list, b);
-      element = list.get(b);
-      list.remove(b);
+  public static int maxCoins(int[] nums) {
+    if (nums==null || nums.length==0)
+      return 0;
+    int[][] dp = new int[nums.length][nums.length];
+    for (int i = 0; i < nums.length; i++) {
+      dp[i][i] = prod(nums, i - 1, i, i + 1);
     }
 
-    for (int i = 0; i < list.size(); i++)
-      temp = Math.max(temp, getMax(list, i));
+    for (int sublen = 1; sublen < nums.length; sublen++) {
+      int i = 0;
+      while (i + sublen < nums.length) {
+        dp[i][i + sublen] = maxCoins(nums, dp, i, i + sublen);
+        i++;
+      }
+    }
 
-    max = max + temp;
+    return dp[0][nums.length - 1];
+  }
 
-    if (b != -1)
-      list.add(b, element);
+  public static int maxCoins(int[] a, int[][] dp, int l, int h) {
+    int max = 0;
+    for (int i = l; i <= h; i++) {
+      int prod = prod(a, l - 1, i, h + 1);
+      if (i == l)
+        max = Math.max(max, prod + dp[l + 1][h]);
+      else if (i == h)
+        max = Math.max(max, prod + dp[l][h - 1]);
+      else
+        max = Math.max(max, prod + dp[l][i - 1] + dp[i + 1][h]);
+    }
     return max;
   }
 
-  public static int getValue(List<Integer> list, int b) {
-    int cost = list.get(b);
-    if (b > 0)
-      cost *= list.get(b - 1);
-    if (b < list.size() - 1)
-      cost *= list.get(b + 1);
-    return cost;
+  public static int prod(int[] a, int l, int i, int h) {
+    int p = 1;
+    if (l >= 0 && l < a.length)
+      p *= a[l];
+    if (h >= 0 && h < a.length)
+      p *= a[h];
+    if (i >= 0 && i < a.length)
+      p *= a[i];
+
+    return p;
   }
 
 }
