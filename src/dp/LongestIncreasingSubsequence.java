@@ -41,6 +41,27 @@ public class LongestIncreasingSubsequence {
 	public static void main(String[] args) {
 		int[] a = { 10, 22, 9, 33, 21, 50, 41, 60, 80 };
 		System.out.println(get(a));
+		System.out.println(getMax(a));
+	}
+	
+	public static int getMax(int[] a) {
+	  int[] dp = new int[a.length];
+	  for(int i=0; i<a.length; i++) {
+	    int count = 0;
+	    for (int j=i-1; j>=0; j--) {
+	      if (a[j] < a[i]) {
+	        if (count < (dp[j] + 1)) {
+	          count = dp[j] + 1;
+	        }
+	      } else {
+	        if (count < dp[j]) {
+            count = dp[j];
+          }
+	      }
+	    }
+	    dp[i] = count == 0 ? 1 : count;
+	  }
+	  return dp[a.length-1];
 	}
 
 }
