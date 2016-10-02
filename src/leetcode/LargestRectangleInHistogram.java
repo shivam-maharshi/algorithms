@@ -1,5 +1,7 @@
 package leetcode;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Stack;
 
 /**
@@ -10,6 +12,23 @@ import java.util.Stack;
  * @author shivam.maharshi
  */
 public class LargestRectangleInHistogram {
+
+  public static int findRectangle(int[] heights) {
+    List<Integer> indices = new ArrayList<>();
+    indices.add(-1);
+    int maxArea = 0;
+    for (int i = 0; i < heights.length; i++) {
+      while (indices.size() > 1 && heights[i] <= heights[indices.get(indices.size() - 1)])
+        indices.remove(indices.size() - 1);
+      indices.add(i);
+      for (int j = indices.size() - 1; j >= 1; j--) {
+        if (i + 1 < heights.length && heights[i + 1] >= heights[indices.get(j)])
+          break;
+        maxArea = Math.max(maxArea, heights[indices.get(j)] * (i - indices.get(j - 1)));
+      }
+    }
+    return maxArea;
+  }
 
   public static int largestRectangleArea(int[] heights) {
     Stack<Integer> stack = new Stack<Integer>();
