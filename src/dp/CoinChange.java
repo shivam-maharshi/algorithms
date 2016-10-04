@@ -9,6 +9,7 @@ package dp;
  */
 public class CoinChange {
 
+  // This is Bottom Up DP.
   public static int cc(int[] coins, int n) {
     int[][] dp = new int[coins.length][n + 1];
     for (int i = 0; i < dp.length; i++)
@@ -38,7 +39,7 @@ public class CoinChange {
     System.out.println(cc(coins, n, 0, dp));
   }
 
-  // Either select a coin or don't. This is memoization of recursive approach.
+  // Either select a coin or don't. This is memoization == Top down DP.
   public static int cc(int[] coins, int n, int cur, int[][] dp) {
     if (n == 0)
       return 1;
