@@ -16,13 +16,20 @@ import java.util.Stack;
 public class SkylineProblem {
 
   public static void main(String[] args) {
-    int[][] buildings = { { 2, 9, 10 }, { 3, 7, 15 }, { 5, 12, 12 }, { 15, 20, 10 }, { 19, 24, 8 } };
+    // int[][] buildings = { { 2, 9, 10 }, { 3, 7, 15 }, { 5, 12, 12 }, { 15,
+    // 20, 10 }, { 19, 24, 8 } };
 
-    List<int[]> sl = getSkyline(buildings);
+    int[][] buildings = { { 2, 9, 10 }, { 3, 12, 10 } };
+
+    // List<int[]> sl = getSkyline(buildings);
+    List<int[]> sl = new SkylineProblem().getLine(buildings);
     for (int[] a : sl)
       System.out.print("[" + a[0] + " " + a[1] + "], ");
   }
 
+  /*
+   * The idea of this solution is correct but it will fail for corner cases. Need to fix it.
+   */
   public List<int[]> getLine(int[][] buildings) {
     List<int[]> res = new ArrayList<>();
     List<Pair> in = new ArrayList<>();
@@ -32,21 +39,37 @@ public class SkylineProblem {
     }
     Collections.sort(in, new Pair());
     Queue<Pair> q = new PriorityQueue<>();
-    for (int i=0; i<in.size(); i++) {
-      Pair p = in.get(i);
-      if ((q.isEmpty() && p.h!=0 && p.cls==0) || (p.cls == 0 && p.h >= q.peek().h)) {
+    Pair p = null;
+    for (int i = 0; i < in.size(); i++) {
+      p = in.get(i);
+      if (p.cls == 0) {
+        if ((q.isEmpty() && p.h != 0) || (p.h >= q.peek().h)) {
+          // System.out.println("Added : " + p);
+          res.add(new int[] { p.l, p.h });
+        }
         q.add(p);
-        res.add(new int[]{p.l, p.h});
-      } else if (!q.isEmpty() && p.cls == 1 && p.h == q.peek().h && p.index == q.peek().index) {
-        p = q.poll();
-        res.add(new int[]{p.l, q.peek().h}); // Next highest height. 
+      } else {
+        if (!q.isEmpty() && p.h == q.peek().h) {
+          q.poll();
+          // System.out.println("Removed : " + p);
+          while (q.peek() != null && buildings[q.peek().index][1] <= p.l) {
+            q.poll(); // Remove till next big that is further to cur.
+          }
+          res.add(new int[] { p.l, q.isEmpty() ? 0 : q.peek().h });
+        }
       }
     }
-    
-    while(!q.isEmpty()) {
-      
+
+    int h = 0;
+    for (int i = 0; i < res.size(); i++) {
+      if (res.get(i)[1] == h) {
+        res.remove(i);
+        i--;
+      } else {
+        h = res.get(i)[1];
+      }
     }
-    
+
     return res;
   }
 
@@ -55,9 +78,8 @@ public class SkylineProblem {
     int h;
     int cls;
     int index;
-    
+
     public Pair() {
-      
     }
 
     public Pair(int l, int h, int cls, int index) {
@@ -72,10 +94,21 @@ public class SkylineProblem {
       if (o1.l < o2.l) {
         return -1;
       } else if (o1.l == o2.l) {
-        return o1.h > o2.h ? -1 : 2;
+        if (o1.h > o2.h) {
+          return -1;
+        } else if (o1.h == o2.h) {
+          return o1.cls == 0 ? -1 : 1;
+        } else {
+          return 1;
+        }
       } else {
-        return -1;
+        return 1;
       }
+    }
+
+    @Override
+    public String toString() {
+      return "Pair [l=" + l + ", h=" + h + ", cls=" + cls + ", index=" + index + "]";
     }
 
     @Override
