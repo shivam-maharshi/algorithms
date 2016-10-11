@@ -13,23 +13,53 @@ import java.util.List;
 public class LexicographicalRankOfStringPermutation {
 
   public static void main(String[] args) {
-    System.out.println(rank("acbd"));
+    System.out.println(rankUsingList("cab"));
+    System.out.println(rankUsingConstantSizedArray("cab"));
   }
 
-  // O(n^2) way better than O(n!) brute force.
-  public static int rank(String s) {
+  // O(n(log(n))) way better than O(n!) brute force.
+  public static int rankUsingList(String s) {
     int rank = 0;
+    // O(n).
+    int fact = fact(s.length());
     List<Character> cl = new ArrayList<Character>();
-    for (char c : s.toCharArray()) {
+    for (char c : s.toCharArray())
       cl.add(c);
-    }
     Collections.sort(cl);
     for (int i = 0; i < s.length(); i++) { // O(n)
+      fact = fact / (s.length() - i);
       int crank = getRank(s.charAt(i), cl); // O(log(n))
-      rank += crank * fact(s.length() - i - 1); // O(n).
+      rank += crank * fact;
       cl.remove(crank);
     }
     return rank + 1;
+  }
+  
+  // Complexity is O(n) because rank is found in constant time.
+  public static int rankUsingConstantSizedArray(String s) {
+    int rank = 0;
+    // Creates rank array with O(256*n) complexity.
+    int[] cc = createRankArray(s);
+    // O(n).
+    int fact = fact(s.length());
+    for (int i = 0; i < s.length(); i++) { // O(n)
+      fact = fact / (s.length() - i);
+      int crank = getRank(s.charAt(i), cc); // O(log(n))
+      rank += crank * fact;
+    }
+    return rank + 1;
+  }
+  
+  public static int[] createRankArray(String s) {
+    int[] cc = new int[256];
+    for (int i=s.length()-1; i>=0; i--) {
+      int ci = (int)(s.charAt(i));
+      int cCount = 1;
+      for(int j=0; j < ci; j++)
+        cCount += cc[j];
+      cc[ci] = cCount;
+    }
+    return cc;
   }
 
   // Complexity is O(n), but can be improved to O(log(n)) by binary search.
@@ -38,6 +68,11 @@ public class LexicographicalRankOfStringPermutation {
       if (cl.get(i) == c)
         return i;
     return 0;
+  }
+  
+  // Complexity is O(256) which is constant.
+  public static int getRank(char c, int[] cc) {
+    return cc[c] - 1;
   }
 
   // Can be improved to O(n) by using DP.
