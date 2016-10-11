@@ -4,11 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Print all string permutations which doesn't have any duplicates characters.
+ * Print all string permutations for a string which doesn't have any duplicates
+ * characters.
  * 
  * @author shivam.maharshi
  */
-public class StringPermutationsWithoutDuplicates {
+public class StringPermutationsWithoutDuplicateCharacters {
 
   public static void main(String[] args) {
     print("abc");
