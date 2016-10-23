@@ -1,13 +1,14 @@
 package twitter;
 
 /**
+ * Mask phone numbers and email.
  * 
  * @author shivam.maharshi
  */
 public class InfoMasking {
-  
+
   public static void main(String[] args) {
-    String[] a = {"P:(333)456-7890", "P:+1(333) 456-(78)(  9)(0 )"};
+    String[] a = { "P:(333)456-7890", "P:+1(333) 456-(78)(  9)(0 )" };
     print(a);
   }
 
@@ -44,13 +45,14 @@ public class InfoMasking {
           sb.append('*');
       } else if (c == '+') {
         sb.append(c);
-      } else if ((c == '(' || c == ' ' || c == ')' || c == '-') && sb.length() > 3 && sb.charAt(sb.length()-1) != '-') {
+      } else if ((c == '(' || c == ' ' || c == ')' || c == '-') && sb.length() > 3
+          && sb.charAt(sb.length() - 1) != '-') {
         sb.append('-');
       }
     }
-    
-    if(sb.charAt(sb.length()-1)=='-')
-      sb.delete(sb.length()-1, sb.length());
+
+    if (sb.charAt(sb.length() - 1) == '-')
+      sb.delete(sb.length() - 1, sb.length());
 
     System.out.println("P:" + sb.reverse().toString());
 
