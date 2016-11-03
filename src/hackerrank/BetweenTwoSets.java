@@ -8,14 +8,16 @@ import org.junit.Test;
 import junit.framework.TestCase;
 
 /**
+ * Link: https://www.hackerrank.com/contests/w25/challenges/between-two-sets
+ * 
  * @author shivam.maharshi
  */
 public class BetweenTwoSets extends TestCase {
-  
+
   @Test
   public static void test() {
-    int[] a = new int[] {2, 4};
-    int[] b = new int[] {16, 32, 96};
+    int[] a = new int[] { 2, 4 };
+    int[] b = new int[] { 16, 32, 96 };
     assertEquals(3, get(a, b));
   }
 
