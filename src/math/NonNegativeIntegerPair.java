@@ -9,7 +9,6 @@ package math;
  * inequality-xx-yy-n-2/
  * 
  * @author shivam.maharshi
- *
  */
 public class NonNegativeIntegerPair {
 
@@ -40,7 +39,7 @@ public class NonNegativeIntegerPair {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(count(6));
+		System.out.println(count(2));
 	}
 
 }

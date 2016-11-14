@@ -4,14 +4,18 @@ package math;
  * Create a Magic square. A square where all rows, columns and both diagonals
  * have the same constant sum.
  * 
+ * Magic Constant (the sum value) = n*(n^2+1)/2.
+ * 
  * Link: http://www.geeksforgeeks.org/magic-square/
  * 
  * @author shivam.maharshi
  */
 public class MagicSquare {
 
+  // This approach works only for odd values of n.
 	public static int[][] get(int n) {
 		int[][] a = new int[n][n];
+		// First number will always be present at this place.
 		int row = n / 2;
 		int col = n - 1;
 		int count = n * n;
@@ -58,7 +62,7 @@ public class MagicSquare {
 	}
 
 	public static void main(String[] args) {
-		MagicSquare.print(get(7));
+		MagicSquare.print(get(4));
 	}
 
 }

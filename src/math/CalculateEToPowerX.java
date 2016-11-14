@@ -5,6 +5,8 @@ package math;
  * 
  * Link: http://www.geeksforgeeks.org/program-to-efficiently-calculate-ex/
  * 
+ * Taylor Series: e^x = 1 + x/1! + x^2/2! + x^3/3! + ...... 
+ * 
  * @author shivam.maharshi
  */
 public class CalculateEToPowerX {

@@ -16,10 +16,6 @@ package math;
 public class FindDerrangements {
 
 	public static int get(int n) {
-		/*
-		 * TODO: Need to discuss. This approach in Geeks for geeks doesn't seem
-		 * right.
-		 */
 		if (n == 0 || n == 1)
 			return 0;
 		if (n == 2)

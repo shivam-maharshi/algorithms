@@ -11,6 +11,7 @@ public class GenerateAllNumbers {
 
 	public static void generate(int[] num) {
 		generateRec(num, 0);
+		printNum(num);
 	}
 
 	private static void generateRec(int[] num, int index) {

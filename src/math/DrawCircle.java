@@ -1,7 +1,6 @@
 package math;
 
 /**
- * 
  * Draw a circle without floating point arithmetic. Given a radius of a circle,
  * draw the circle without using floating point arithmetic
  * 

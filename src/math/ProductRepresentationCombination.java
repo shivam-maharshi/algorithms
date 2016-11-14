@@ -27,9 +27,18 @@ public class ProductRepresentationCombination {
 			}
 		}
 	}
+	
+	public static void p(int n, int f, String s) {
+	  for(int i=f; i<=Math.sqrt(n); i++) {
+	    if(n%i==0)
+	      p(n/i, f, s + " * " + i);
+	  }
+	  System.out.println(s + " * " + n);
+	}
 
 	public static void main(String[] args) {
-		ProductRepresentationCombination.print(24, "", 2);
+		// ProductRepresentationCombination.print(24, "", 2);
+		p(24, 2, "");
 	}
 
 }
