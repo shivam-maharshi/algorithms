@@ -17,7 +17,7 @@ import java.util.Set;
 public class TopKFrequentElements {
   
   public static void main(String[] args) {
-    List<Integer> l = topKFrequent(new int[]{1,1,1,2,2,3}, 2);
+    topKFrequent(new int[]{1,1,1,2,2,3}, 2);
   }
 
   public static List<Integer> topKFrequent(int[] nums, int k) {
