@@ -1,4 +1,4 @@
-package interview;
+package interview.goldman_sachs;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -7,6 +7,12 @@ import org.junit.Test;
 
 import junit.framework.TestCase;
 
+/**
+ * Given an array count the number of distinct pairs that sum up to a particular
+ * number.
+ * 
+ * @author shivam.maharshi
+ */
 public class SumPairs extends TestCase {
 
   @Test
