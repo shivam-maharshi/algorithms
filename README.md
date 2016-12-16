@@ -20,6 +20,8 @@ This repository contains some algorithms and data structures mostly implemented 
  * [Twitter] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/interview/twitter)
  * [Visa] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/interview/visa)
 * [Leetcode] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/leetcode)
+ * [Medium] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/leetcode/medium)
+ * [Hard] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/leetcode/hard)
 * [Mathematical] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/math)
 * [Puzzles] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/puzzles)
 * [Recursion] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/recursion)
