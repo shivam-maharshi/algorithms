@@ -1,4 +1,4 @@
-package data.structures;
+package ds;
 
 import java.util.ArrayList;
 import java.util.List;

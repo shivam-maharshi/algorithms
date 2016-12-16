@@ -1,6 +1,6 @@
 package recursion;
 
-import data.structures.BinaryTree;
+import ds.BinaryTree;
 
 /**
  * Find the lowest common ancestor.

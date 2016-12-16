@@ -1,4 +1,4 @@
-package data.structures;
+package ds;
 
 /**
  * Standard generic representation of a Binary Search Tree.

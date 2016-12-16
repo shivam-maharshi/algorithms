@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import data.structures.Edge;
-import data.structures.Node;
+import ds.Edge;
+import ds.Node;
 
 /**
  * Create a minimum spanning tree from the given graph using Prims algorithm.

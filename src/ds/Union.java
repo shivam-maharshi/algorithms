@@ -1,4 +1,4 @@
-package data.structures;
+package ds;
 
 /**
  * Standard representation of a Union data structure.

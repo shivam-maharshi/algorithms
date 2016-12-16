@@ -1,7 +1,7 @@
 package graph;
 
-import data.structures.GraphAdjList;
-import data.structures.Union;
+import ds.GraphAdjList;
+import ds.Union;
 
 /**
  * Detect cycle in an undirected graph via Union Find algorithm using Disjoint

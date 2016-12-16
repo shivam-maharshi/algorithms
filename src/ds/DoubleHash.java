@@ -1,4 +1,4 @@
-package data.structures;
+package ds;
 
 /**
  * Represents a double hash function.

@@ -3,10 +3,10 @@ package graph;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import data.structures.GraphAdjList;
-import data.structures.GraphComplex;
-import data.structures.Node;
-import data.structures.State;
+import ds.GraphAdjList;
+import ds.GraphComplex;
+import ds.Node;
+import ds.State;
 
 /**
  * Standard Breadth First Search implementation.

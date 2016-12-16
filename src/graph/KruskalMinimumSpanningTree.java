@@ -5,10 +5,10 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import data.structures.Edge;
-import data.structures.Graph;
-import data.structures.Node;
-import data.structures.Union;
+import ds.Edge;
+import ds.Graph;
+import ds.Node;
+import ds.Union;
 
 /**
  * Create a minimum spanning tree for the given graph using Kruskal's algorithm.

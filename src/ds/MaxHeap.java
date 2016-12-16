@@ -1,4 +1,4 @@
-package data.structures;
+package ds;
 
 /**
  * Implementation of a generic Max Heap.

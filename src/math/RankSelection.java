@@ -3,10 +3,13 @@ package math;
 /**
  * Find the smallest i numbers from a list of n numbers.
  * 
+ * TODO: Correct this.
+ * 
  * @author shivam.maharshi
  */
 public class RankSelection {
 
+  // TODO: Correct this!
 	public static int[] smallestNumbers(int[] arr, int num) {
 		int[] s = new int[num];
 		int pivot = partition(arr, num, 0, arr.length - 1);

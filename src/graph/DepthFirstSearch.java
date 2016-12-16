@@ -1,6 +1,6 @@
 package graph;
 
-import data.structures.GraphAdjList;
+import ds.GraphAdjList;
 
 /**
  * Standard Depth First Search implementation for various graph representation.

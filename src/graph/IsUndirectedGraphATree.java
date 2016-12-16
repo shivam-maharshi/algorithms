@@ -1,6 +1,6 @@
 package graph;
 
-import data.structures.GraphAdjList;
+import ds.GraphAdjList;
 
 /**
  * Check if the undirected graph is a tree. An undirected graph is tree if it

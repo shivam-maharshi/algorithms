@@ -2,7 +2,7 @@ package array;
 
 import java.util.List;
 
-import data.structures.MinHeap;
+import ds.MinHeap;
 
 /**
  * Write the best way to merge M sorted array streams.

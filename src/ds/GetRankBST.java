@@ -1,4 +1,4 @@
-package data.structures;
+package ds;
 
 /**
  * Design a data structure using which we can calculate rank of a number very

@@ -1,6 +1,6 @@
 package sorting;
 
-import data.structures.MinHeap;
+import ds.MinHeap;
 
 /**
  * Given an array of n elements, where each element is at most k away from its

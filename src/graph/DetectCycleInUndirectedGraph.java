@@ -1,6 +1,6 @@
 package graph;
 
-import data.structures.GraphAdjList;
+import ds.GraphAdjList;
 
 /**
  * Given an undirected graph, check whether the graph contains a cycle or not.

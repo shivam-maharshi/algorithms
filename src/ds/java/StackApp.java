@@ -1,4 +1,4 @@
-package data.structure.java;
+package ds.java;
 
 import java.util.Stack;
 

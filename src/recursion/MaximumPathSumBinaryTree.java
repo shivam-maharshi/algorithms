@@ -1,6 +1,6 @@
 package recursion;
 
-import data.structures.BinaryTree;
+import ds.BinaryTree;
 
 /**
  * Given a binary tree, find the maximum path sum. The path may start and end at

@@ -1,6 +1,6 @@
 package recursion;
 
-import data.structures.BinaryTree;
+import ds.BinaryTree;
 
 /**
  * Expression tree is a binary tree in which each internal node corresponds to

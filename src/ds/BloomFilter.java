@@ -1,4 +1,4 @@
-package data.structures;
+package ds;
 
 import org.junit.Test;
 

@@ -1,6 +1,6 @@
 package recursion;
 
-import data.structures.BinaryTree;
+import ds.BinaryTree;
 
 /**
  * Print the boundaries of a tree. I.e. its left nodes, then all its leaves and
