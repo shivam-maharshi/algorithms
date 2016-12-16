@@ -1,5 +1,5 @@
 # Algorithms
-This repository contains some algorithms and data structures mostly implemented for kicks and interview preparation. Hopefully might help someone in need! Feel free to fork, copy, suggest corrections or ask questions. Happy coding :)
+This repository contains some algorithms and data structures mostly implemented for kicks and interview preparation. Hopefully might help someone in need! _**Feel free to fork, copy, suggest corrections or ask questions. Happy coding :)**_
 
 # Contents
 * [Arrays] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/array)
