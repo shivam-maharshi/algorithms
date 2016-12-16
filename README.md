@@ -7,7 +7,8 @@ This repository contains some algorithms and data structures mostly implemented 
 * [Bit] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/bit)
 * [Books] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/book)
  * [Gayle Mc.Dowell] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/book/mcdowell)
-* [Data Structures
+* [Data Structures] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/ds)
+ * [Java] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/ds/java)
 * [Graph] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/graph)
 * [Greedy] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/greedy)
 * [Hackerank] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/hackerrank)
