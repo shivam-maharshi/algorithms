@@ -11,7 +11,7 @@ This repository contains some algorithms and data structures mostly implemented 
 * [Greedy](https://github.com/shivam-maharshi/Algorithms/tree/master/src/greedy)
 * [Hackerank](https://github.com/shivam-maharshi/Algorithms/tree/master/src/hackerrank)
 * [Interviews](https://github.com/shivam-maharshi/Algorithms/tree/master/src/interview)
-** [Amazon] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/interview/amazon)
+ * [Amazon] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/interview/amazon)
 * [Leetcode](https://github.com/shivam-maharshi/Algorithms/tree/master/src/leetcode)
 * [Mathematical](https://github.com/shivam-maharshi/Algorithms/tree/master/src/math)
 * [Puzzles](https://github.com/shivam-maharshi/Algorithms/tree/master/src/puzzles)
