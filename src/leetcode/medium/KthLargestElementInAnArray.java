@@ -13,15 +13,14 @@ public class KthLargestElementInAnArray extends TestCase {
 
   @Test
   public static void test() {
-//    assertEquals(-1, findKthLargest(new int[] {}, 1));
-//    assertEquals(3, findKthLargest(new int[] { 3 }, 1));
-//    assertEquals(3, findKthLargest(new int[] { 3, 3 }, 1));
-//    assertEquals(5, findKthLargest(new int[] { 3, 1, 4, 2, 5 }, 1));
-//    assertEquals(4, findKthLargest(new int[] { 3, 1, 4, 2, 5 }, 2));
+    assertEquals(-1, findKthLargest(new int[] {}, 1));
+    assertEquals(3, findKthLargest(new int[] { 3 }, 1));
+    assertEquals(3, findKthLargest(new int[] { 3, 3 }, 1));
+    assertEquals(5, findKthLargest(new int[] { 3, 1, 4, 2, 5 }, 1));
+    assertEquals(4, findKthLargest(new int[] { 3, 1, 4, 2, 5 }, 2));
     assertEquals(3, findKthLargest(new int[] { 3, 1, 4, 2, 5 }, 3));
     assertEquals(2, findKthLargest(new int[] { 3, 1, 4, 2, 5 }, 4));
     assertEquals(1, findKthLargest(new int[] { 3, 1, 4, 2, 5 }, 5));
-    // System.out.println(quickSort(new int[]{3,1,5,4,2}, 0, 4));
   }
 
   public static int findKthLargest(int[] nums, int k) {
