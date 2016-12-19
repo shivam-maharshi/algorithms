@@ -16,10 +16,10 @@ public class QuickSort {
 
 	private static void sort(int[] a, int l, int h) {
 		if (l < h) {
-			// int p = lowPar(a, l, h);
-			// int p = highPar(a, l, h);
-			// int p = midPar(a, l, h);
-			int p = randPar(a, l, h);
+			int p = lowPar(a, l, h);
+			p = highPar(a, l, h);
+			p = midPar(a, l, h);
+			p = randPar(a, l, h);
 			sort(a, l, p - 1);
 			sort(a, p + 1, h);
 		}
@@ -27,7 +27,8 @@ public class QuickSort {
 
 	// This is partitioning around the median element as pivot.
 	// This has fixed O(nLog(n)) worst case complexity.
-	private static int medPar(int[] a, int l, int h) {
+	@SuppressWarnings("unused")
+  private static int medPar(int[] a, int l, int h) {
 		// TODO:
 		return 0;
 	}
