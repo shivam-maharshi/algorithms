@@ -1,4 +1,6 @@
 # Algorithms
+[![Build Status](https://travis-ci.org/shivam-maharshi/Algorithms.svg?branch=master)](https://travis-ci.org/shivam-maharshi/Algorithms)
+
 This repository contains some algorithms and data structures mostly implemented for kicks and interview preparation. Hopefully might help someone in need! _**Feel free to fork, copy, suggest corrections or ask questions. Happy coding :)**_
 
 # Contents
