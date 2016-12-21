@@ -23,6 +23,7 @@ public class Subsets {
     return r;
   }
 
+  @SuppressWarnings({ "rawtypes", "unchecked" })
   public static void subset(int[] nums, List<List<Integer>> r, List<Integer> t, int i) {
     if (i >= nums.length) {
       r.add((List<Integer>) ((ArrayList) t).clone());
