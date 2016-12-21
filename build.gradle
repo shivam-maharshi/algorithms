@@ -1,0 +1,61 @@
+group 'Algorithms'
+version '1.0'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+installApp {
+    destinationDir = file 'bin'
+    doFirst {
+        if (destinationDir.exists())
+            delete destinationDir
+    }
+    doLast {
+        def nestedBin = destinationDir.name + '/bin'
+        copy {
+            from nestedBin
+            into destinationDir.name
+        }
+        delete nestedBin
+    }
+}
+
+startScripts {
+    mainClassName = 'com.javarockstars.mpp.keyvaluestore.example.ServerExample'
+    applicationName = 'mpp-server'
+    doLast {
+        def windowsScriptFile = file getWindowsScript()
+        def unixScriptFile = file getUnixScript()
+        windowsScriptFile.text = windowsScriptFile.text.replace('set APP_HOME=%DIRNAME%..', 'set APP_HOME=%DIRNAME%')
+        unixScriptFile.text = unixScriptFile.text.replace('cd "`dirname \\"$PRG\\"`/.." >&-', 'cd "`dirname \\"$PRG\\"`" >&-')
+    }
+}
+
+assemble.dependsOn installApp
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
+
+test {
+    exclude "**/JUnitTestSuite.class"
+    testLogging {
+        events "failed", "passed"
+        exceptionFormat "short"
+
+        debug {
+            events "passed", "skipped", "failed"
+            exceptionFormat "full"
+        }
+
+        // remove standard output/error logging from --info builds
+        info.events = ["failed", "skipped"]
+    }
+}
