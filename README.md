@@ -30,3 +30,6 @@ This repository contains some algorithms and data structures mostly implemented 
 * [Recursion] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/main/java/recursion)
 * [Sorting] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/main/java/sorting)
 * [String] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/main/java/string)
+
+# Run Build
+* `gradle wrapper --gradle-version 2.0`
