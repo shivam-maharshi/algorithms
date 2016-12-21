@@ -24,8 +24,8 @@ installApp {
 }
 
 startScripts {
-    mainClassName = 'com.javarockstars.mpp.keyvaluestore.example.ServerExample'
-    applicationName = 'mpp-server'
+    mainClassName = 'leetcode.medium.DifferentWaysToAddParentheses'
+    applicationName = 'Algorithms'
     doLast {
         def windowsScriptFile = file getWindowsScript()
         def unixScriptFile = file getUnixScript()
