@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.medium;
 
 /**
  * Link: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
