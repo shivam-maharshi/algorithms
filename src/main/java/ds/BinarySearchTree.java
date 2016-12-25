@@ -7,9 +7,12 @@ package ds;
  */
 public class BinarySearchTree<V> {
 
-	private V value;
-	private BinarySearchTree<V> left;
-	private BinarySearchTree<V> right;
+	@SuppressWarnings("unused")
+  private V value;
+	@SuppressWarnings("unused")
+  private BinarySearchTree<V> left;
+	@SuppressWarnings("unused")
+  private BinarySearchTree<V> right;
 
 	public void insert(V value) {
 		BinarySearchTree<V> node = this;
@@ -31,7 +34,8 @@ public class BinarySearchTree<V> {
 		return this;
 	}
 
-	private void insertIntoNode(V[] arr, int low, int high) {
+	@SuppressWarnings("unchecked")
+  private void insertIntoNode(V[] arr, int low, int high) {
 		while (low <= high) {
 			Integer mid = (low + high) / 2;
 			this.insert((V)mid);

@@ -13,7 +13,8 @@ public class GraphAdjList {
 
 	private LinkedList<Integer>[] adjList;
 
-	public GraphAdjList(int size) {
+	@SuppressWarnings("unchecked")
+  public GraphAdjList(int size) {
 		adjList = new LinkedList[size];
 		for (int i = 0; i < size; i++)
 			adjList[i] = new LinkedList<>();
