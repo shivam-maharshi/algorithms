@@ -3,7 +3,7 @@
 
 This repository contains some algorithms and data structures mostly implemented for kicks and learning. Hopefully might help someone in need! _**Feel free to fork, copy, suggest corrections or ask questions. Happy coding :)**_
 
-# Contents
+## Contents
 * [Arrays] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/main/java/array)
 * [Backtracking] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/main/java/backtracking)
 * [Bit] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/main/java/bit)
@@ -31,5 +31,5 @@ This repository contains some algorithms and data structures mostly implemented 
 * [Sorting] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/main/java/sorting)
 * [String] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/main/java/string)
 
-# Run Build
+## Run Build
 * `gradle wrapper --gradle-version 2.0`
