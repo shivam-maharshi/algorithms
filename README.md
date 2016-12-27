@@ -31,5 +31,5 @@ This repository contains some algorithms and data structures mostly implemented 
 * [Sorting] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/main/java/sorting)
 * [String] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/main/java/string)
 
-## Run Build
+## [Run Build] (https://github.com/shivam-maharshi/algorithms)
 * `gradle wrapper --gradle-version 2.0`
