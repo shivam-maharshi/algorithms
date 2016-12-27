@@ -1,9 +1,9 @@
-# Algorithms
+# [Algorithms] (https://github.com/shivam-maharshi/algorithms)
 [![Build Status](https://travis-ci.org/shivam-maharshi/Algorithms.svg?branch=master)](https://travis-ci.org/shivam-maharshi/Algorithms)
 
 This repository contains some algorithms and data structures mostly implemented for kicks and learning. Hopefully might help someone in need! _**Feel free to fork, copy, suggest corrections or ask questions. Happy coding :)**_
 
-## Contents
+## [Contents] (https://github.com/shivam-maharshi/algorithms)
 * [Arrays] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/main/java/array)
 * [Backtracking] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/main/java/backtracking)
 * [Bit] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/main/java/bit)
