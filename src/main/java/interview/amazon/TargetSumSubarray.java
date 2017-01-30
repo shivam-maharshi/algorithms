@@ -1,4 +1,4 @@
-package interview.facebook;
+package interview.amazon;
 
 import java.util.ArrayList;
 import java.util.List;

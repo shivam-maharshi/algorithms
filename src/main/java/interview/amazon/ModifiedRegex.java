@@ -1,4 +1,4 @@
-package interview.facebook;
+package interview.amazon;
 
 import org.junit.Test;
 
