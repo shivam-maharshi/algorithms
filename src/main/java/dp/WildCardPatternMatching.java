@@ -1,5 +1,9 @@
 package dp;
 
+import org.junit.Test;
+
+import junit.framework.TestCase;
+
 /**
  * Wildcard pattern matching.
  * 
@@ -7,14 +11,37 @@ package dp;
  * 
  * @author shivam.maharshi
  */
-public class WildCardPatternMatching {
-  
+public class WildCardPatternMatching extends TestCase {
+
+  @Test
+  public static void test() {
+    assertEquals(true, match("abccd", "a*.*d"));
+    assertEquals(false, match("abccd", "a*.*c"));
+    assertEquals(false, match("a", "*"));
+    assertEquals(true, match("a", "a*"));
+    assertEquals(true, match("a", "."));
+    assertEquals(true, match("a", "a*"));
+    assertEquals(false, match("", "a*"));
+    assertEquals(true, match("", ""));
+    assertEquals(true, match("abcde", ".*"));
+    assertEquals(true, match("abcde", "..*.."));
+    assertEquals(true, match("abcde", ".*.*."));
+    assertEquals(true, match("abcde", "....."));
+    assertEquals(true, match("abcde", "a*b*c*d*e*"));
+    assertEquals(true, match("abcde", "a*b*d*e*"));
+    assertEquals(false, match("abc", "abcd*"));
+    assertEquals(false, match("abcde", "...."));
+    assertEquals(true, match("abcde", "....*"));
+    assertEquals(false, match("abcde", "....f"));
+    assertEquals(true, match("abcdd", "....*"));
+  }
+
   public static void main(String[] args) {
-    System.out.println(match("abc" , "a*?*b?"));
+    System.out.println(match("abc", "a*?*b?"));
   }
 
   public static boolean match(String s, String p) {
-    boolean[][] dp = new boolean[s.length()+1][p.length()+1];
+    boolean[][] dp = new boolean[s.length() + 1][p.length() + 1];
     populate(s, p, dp);
     return dp[s.length()][p.length()];
   }
@@ -26,7 +53,7 @@ public class WildCardPatternMatching {
       for (int j = 0; j < p.length(); j++) {
         if (p.charAt(j) == '*')
           dp[i + 1][j + 1] = dp[i + 1][j] || dp[i][j + 1];
-        else if (s.charAt(i) == p.charAt(j) || p.charAt(j) == '?')
+        else if (s.charAt(i) == p.charAt(j) || p.charAt(j) == '.')
           dp[i + 1][j + 1] = dp[i][j];
       }
     }
