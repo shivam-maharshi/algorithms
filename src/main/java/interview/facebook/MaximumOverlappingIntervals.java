@@ -16,7 +16,8 @@ import java.util.TreeSet;
 public class MaximumOverlappingIntervals {
 
 	// Complexity is O(n*log(n))
-	public static int max(int[] s, int[] e) {
+	@SuppressWarnings("unchecked")
+  public static int max(int[] s, int[] e) {
 		TreeSet<Interval> maxCountList = null;
 		int maxCount = 0;
 		int curCount = 0;
