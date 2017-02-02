@@ -11,6 +11,7 @@ This repository contains some algorithms and data structures mostly implemented 
  * [Gayle Mc.Dowell] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/main/java/book/mcdowell)
 * [Data Structures] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/main/java/ds)
  * [Java] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/main/java/ds/java)
+* [Dyanamic Programming] (https://github.com/shivam-maharshi/algorithms/tree/master/src/main/java/dp)
 * [Graph] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/main/java/graph)
 * [Greedy] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/main/java/greedy)
 * [Hackerank] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/main/java/hackerrank)
