@@ -34,6 +34,7 @@ public class ModifiedRegex extends TestCase {
     assertEquals(true, match("abcde", "....*"));
     assertEquals(false, match("abcde", "....f"));
     assertEquals(true, match("abcdd", "....*"));
+    assertEquals(true, match("abcdd", "c*.*"));
   }
 
   public static boolean match(String s, String p) {
@@ -46,8 +47,11 @@ public class ModifiedRegex extends TestCase {
     if (i >= s.length() || j >= p.length())
       return false;
     char sc = s.charAt(i), pc = p.charAt(j);
-    if (j + 1 < p.length() && p.charAt(j + 1) == '*')
-      return sc == pc || pc == '.' ? match(s, p, i + 1, j) || match(s, p, i + 1, j + 2) : false;
+    if (j + 1 < p.length() && p.charAt(j + 1) == '*') {
+      if (sc != pc && pc != '.' && match(s, p, i, j + 2))
+        return true;
+      return sc == pc || pc == '.' ? (match(s, p, i + 1, j) || match(s, p, i + 1, j + 2)) : false;
+    }
     return sc == pc || pc == '.' ? match(s, p, i + 1, j + 1) : false;
   }
 
