@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.hard;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -16,10 +16,9 @@ import java.util.Stack;
 public class SkylineProblem {
 
   public static void main(String[] args) {
-    // int[][] buildings = { { 2, 9, 10 }, { 3, 7, 15 }, { 5, 12, 12 }, { 15,
-    // 20, 10 }, { 19, 24, 8 } };
+    int[][] buildings = { { 2, 9, 10 }, { 3, 7, 15 }, { 5, 12, 12 }, { 15, 20, 10 }, { 19, 24, 8 } };
 
-    int[][] buildings = { { 2, 9, 10 }, { 3, 12, 10 } };
+    // int[][] buildings = { { 2, 9, 10 }, { 3, 12, 10 } };
 
     // List<int[]> sl = getSkyline(buildings);
     List<int[]> sl = new SkylineProblem().getLine(buildings);
@@ -113,6 +112,8 @@ public class SkylineProblem {
 
     @Override
     public int compareTo(Pair o) {
+      if (this.h == o.h)
+        return this.cls < o.cls ? -1 : 1;
       return this.h > o.h ? -1 : 1;
     }
 
