@@ -27,6 +27,7 @@ This repository contains some algorithms and data structures mostly implemented 
  * [Medium] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/main/java/leetcode/medium)
  * [Hard] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/main/java/leetcode/hard)
 * [Mathematical] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/main/java/math)
+* [Pramp] (https://github.com/shivam-maharshi/algorithms/tree/master/src/main/java/pramp)
 * [Puzzles] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/main/java/puzzles)
 * [Recursion] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/main/java/recursion)
 * [Sorting] (https://github.com/shivam-maharshi/Algorithms/tree/master/src/main/java/sorting)

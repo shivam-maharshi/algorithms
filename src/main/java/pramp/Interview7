@@ -1,0 +1,36 @@
+class Pramp {
+   
+   public static void main(String[] args) {
+      String pramp = "Practice Makes Perfect";
+      System.out.println(pramp); 
+   }
+   
+  // a = {5, 10, 4, 1, 2}; l == 5
+  // i = {0, 1, 2, 3, 4}
+  // {2, 10, 4, 1, 5}
+  // {10, 2, 4, 1, 5}
+  // {10, 2, 1, 4, 5}
+  // {1, 2, 3, 4, 5}
+   
+   // [0, MAX_VALUE]
+   
+   public static int get(int[] n) {
+      if (n==null || n.length() == 0)
+         return 1;
+      
+      for (int i=0; i<n.length(); i++) {
+         while (n[i] != i + 1 && n[i] <= n.length && n[i] > 0) {
+            int temp = n[i]; // 1
+            n[i] = n[temp - 1]; // 10
+            n[temp - 1] = temp; // n[0] = 1
+         }
+      }
+      
+      for (int i=0; i<n.length(); i++)
+         if (n[i] != i + 1)
+            return i + 1;
+      
+      return n.length() + 1;
+   }
+   
+}
