@@ -1,18 +1,16 @@
+/*
+* Given time availabilities for two people and a duration for meeting between them, find the
+* earliest available time slot where they can conduct schedule the meeting. If there is no
+* such time slot then return an empty array.
+*
+* @author: shivam.maharshi
+*/
 class Pramp {
    public static void main(String[] args) {
       String pramp = "Practice Makes Perfect";
       System.out.println(pramp);
    }
    
-  timesA = {[1, 3] , [6, 7], [10, 15]}
-  timesB = {[4, 5] , [6, 11], [12, 20]}
-  dur = 3;
-   
-   // 1, 5
-   // 2, 5
-   // 3
-   
-   // n * 2 // m * 2
    public static int[] get (int[][] ta, [][] tb, int dur) {
       int[] r = new int[2];
       if (ta == null || ta.length() == 0 || tb == null || tb.length() ==0)
@@ -20,31 +18,22 @@ class Pramp {
       int i=0, j=0;
       
       while (i < ta.legnth() && j < tb.length()) {
-         if (hasSlot(ta[i], tb[j], i, j, dur)) {
-            r[0] = Math.max(ta[i][0], tb[j][0]); // Start
-            r[1] = Math.min(ta[i][1], tb[j][1]); // End
+         int start = Math.max(ta[i][0], tb[j][0]), end = Math.min(ta[i][1], tb[j][1]);
+         if (end - start >= dur) {
+            r[0] = start;
+            r[1] = end;
             return r;
          } else {
             if (i == ta.length() -1)
                j++;
             else if (j == tb.length() - 1)
                i++;
-            else if (incrA(ta, tb, i, j))
+            else if (ta[i][1] < tb[j][1])
                i++;
             else
                j++;
          }
-      }
-      
+      }  
       return r;
    }
-   
-   public static boolean hasSlot(int[][] ta, int[][] tb, int i, int j, int dur) {
-      return Math.min(ta[i][1], tb[j][1]) -  Math.max(ta[i][0], tb[j][0]) >= dur;
-   }
-   
-   public static boolean incrA(int[][] ta, int[][] tb, int i, int j) {
-      return ta[i][1] < tb[j][1];  
-   }
-   
 }
