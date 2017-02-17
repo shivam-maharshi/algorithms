@@ -1,3 +1,4 @@
+package pramp;
 
 /**
 * Given an array of integer return an index where the value stored at it is the same as the index.
@@ -6,7 +7,7 @@
 * @author: shivam.maharshi
 */
 
-public class Pramp {
+public class Interview3 {
 
    // {0} - 0
    // {-1, 1} - 1
@@ -15,7 +16,7 @@ public class Pramp {
    // {-3, -2} - -1
    
    public static int get(int[] a) {
-      if (a==null || a.length = 0)
+      if (a==null || a.length == 0)
          return -1;
       return get (a, 0, a.length - 1);
    }
