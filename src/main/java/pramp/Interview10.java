@@ -1,9 +1,5 @@
 class Pramp {
-   public static void main(String[] args) {
-      String pramp = "Practice Makes Perfect";
-      System.out.println(pramp);
-   }
-   
+
    public static String get(String s, char[] a) {
       if (a == null || a.length == 0 || s == null || s.length() == 0 || a.length > s.legnth())
          return null;
@@ -11,15 +7,7 @@ class Pramp {
       int[] c = new int[256];
       for (int i=0; i< a.length; i++)
          c[s.charAt(i)]++;
-      if (allPresent(a, c)) // S= xyyzzyx -> zyx, zyx
-         return s.substring(0, a.length);
-      
       int i = 0, j = a.length - 1;
-      
-      // S= xyyzzyx | a = zyx  
-      // xyyz zyx
-      // s = 0 e 3 | s = 5 e= s.length;
-      // s.length = 8, a.length = 3 ... 8 - 3 = i = 5, j == 8
       while (i <= s.length() - a.length && j <= s.length()) {
          if (allPresent(a, c)) {
             r = (r == null || r.length() > j - i) ? s.substring(i, j) : r; // 5, 8
@@ -32,7 +20,6 @@ class Pramp {
             c[s.charAt(j)]++;
          }
       }
-      
       return r;
    }
    
@@ -44,7 +31,4 @@ class Pramp {
       }
       return true;
    }
-   
-   
-  
 }
