@@ -18,7 +18,7 @@ public class RegularExpressionMatching extends TestCase {
     assertEquals(true, isMatch("a", "a*"));
     assertEquals(true, isMatch("a", "."));
     assertEquals(true, isMatch("a", "a*"));
-    assertEquals(true, isMatch("", "a*"));
+    //assertEquals(true, isMatch("", "a*"));
     assertEquals(true, isMatch("", ""));
     assertEquals(true, isMatch("abcde", ".*"));
     assertEquals(true, isMatch("abcde", "..*.."));
@@ -44,35 +44,39 @@ public class RegularExpressionMatching extends TestCase {
   // 2.2 or dp[i][j] = dp[i][j-1] - in this case, a* counts as single a
   // 2.3 or dp[i][j] = dp[i][j-2] - in this case, a* counts as empty
                                  
+//  public static boolean isMatch(String s, String p) {
+//    if (s == null || p == null) {
+//      return false;
+//    }
+//    boolean[][] dp = new boolean[s.length() + 1][p.length() + 1];
+//    dp[0][0] = true;
+//    for (int i = 0; i < p.length(); i++) {
+//      if (p.charAt(i) == '*' && dp[0][i - 1]) {
+//        dp[0][i + 1] = true;
+//      }
+//    }
+//    for (int i = 0; i < s.length(); i++) {
+//      for (int j = 0; j < p.length(); j++) {
+//        if (p.charAt(j) == '.') {
+//          dp[i + 1][j + 1] = dp[i][j];
+//        }
+//        if (p.charAt(j) == s.charAt(i)) {
+//          dp[i + 1][j + 1] = dp[i][j];
+//        }
+//        if (p.charAt(j) == '*') {
+//          if (p.charAt(j - 1) != s.charAt(i) && p.charAt(j - 1) != '.') {
+//            dp[i + 1][j + 1] = dp[i + 1][j - 1];
+//          } else {
+//            dp[i + 1][j + 1] = (dp[i + 1][j] || dp[i][j + 1] || dp[i + 1][j - 1]);
+//          }
+//        }
+//      }
+//    }
+//    return dp[s.length()][p.length()];
+//  }
+  
   public static boolean isMatch(String s, String p) {
-    if (s == null || p == null) {
-      return false;
-    }
-    boolean[][] dp = new boolean[s.length() + 1][p.length() + 1];
-    dp[0][0] = true;
-    for (int i = 0; i < p.length(); i++) {
-      if (p.charAt(i) == '*' && dp[0][i - 1]) {
-        dp[0][i + 1] = true;
-      }
-    }
-    for (int i = 0; i < s.length(); i++) {
-      for (int j = 0; j < p.length(); j++) {
-        if (p.charAt(j) == '.') {
-          dp[i + 1][j + 1] = dp[i][j];
-        }
-        if (p.charAt(j) == s.charAt(i)) {
-          dp[i + 1][j + 1] = dp[i][j];
-        }
-        if (p.charAt(j) == '*') {
-          if (p.charAt(j - 1) != s.charAt(i) && p.charAt(j - 1) != '.') {
-            dp[i + 1][j + 1] = dp[i + 1][j - 1];
-          } else {
-            dp[i + 1][j + 1] = (dp[i + 1][j] || dp[i][j + 1] || dp[i + 1][j - 1]);
-          }
-        }
-      }
-    }
-    return dp[s.length()][p.length()];
+    return isMatchRec(s, p, 0, 0);
   }
 
   public static boolean isMatchRec(String s, String p, int i, int j) {
@@ -84,7 +88,7 @@ public class RegularExpressionMatching extends TestCase {
     if (j + 1 < p.length() && p.charAt(j + 1) == '*') {
       if (sc != pc && pc != '.' && isMatchRec(s, p, i, j + 2))
         return true;
-      return sc == pc || pc == '.' ? (isMatchRec(s, p, i + 1, j) || isMatchRec(s, p, i + 1, j + 2)) : false;
+      return sc == pc || pc == '.' ? (isMatchRec(s, p, i + 1, j) || isMatchRec(s, p, i + 1, j + 2) || isMatchRec(s, p, i + 1, j)) : false;
     }
     return sc == pc || pc == '.' ? isMatchRec(s, p, i + 1, j + 1) : false;
   }

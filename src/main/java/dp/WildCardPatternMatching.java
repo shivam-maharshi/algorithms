@@ -36,10 +36,6 @@ public class WildCardPatternMatching extends TestCase {
     assertEquals(true, match("abcdd", "....*"));
   }
 
-  public static void main(String[] args) {
-    System.out.println(match("abc", "a*?*b?"));
-  }
-
   public static boolean match(String s, String p) {
     boolean[][] dp = new boolean[s.length() + 1][p.length() + 1];
     populate(s, p, dp);
