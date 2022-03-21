@@ -9,70 +9,76 @@ public class SearchForARange {
 
   public int[] searchRange(int[] nums, int target) {
     int[] res = new int[2];
-    int l = 0, r = nums.length - 1, mid = 0, low = -1, high = -1;
-    while (l <= r) {
-      mid = l + (r - l) / 2;
+    int index = 0, length = nums.length - 1, mid = 0, low = -1, high = -1;
+    while (index <= length) {
+      mid = index + (length - index) / 2;
       if (nums[mid] == target) {
         low = mid;
         high = mid;
         break;
       } else if (nums[mid] < target) {
-        l = mid+1;
+        index = mid+1;
       } else {
-        r = mid -1;
+        length = mid -1;
       }
     }
     
-    // Get lowest range;
-    if (low != -1) {
-      r = low;
-      l = 0;
-      while (l <= r) {
-        mid = l + (r - l) / 2;
-        if (l == r) {
-          if(nums[l]==target)
-            low = l;
-          break;
-        }
-        if (nums[mid] >= target) {
-          r = mid - 1;
-          low = mid;
-        } else {
-          l = mid + 1;
-        }
-      }
-    }
-
-    // Get highest range;
-    if (high != -1) {
-      l = high;
-      r = nums.length - 1;
-      while (l <= r) {
-        mid = l + (r - l) / 2;
-        if (l == r) {
-          if(nums[r]==target)
-            high = r;
-          break;
-        }
-        if (nums[mid] <= target) {
-          l = mid + 1;
-          high = mid;
-        } else {
-          r = mid - 1;
-        }
-      }
-    }
+    getLowestRange(mid, low, index, length, nums, target);
+    getHighestRange(high, mid, index, length, nums, target);
     res[0] = low;
     res[1] = high;
     return res;
   }
-  
+  public int getLowestRange(int mid, int low, int index, int length, int[] nums, int target) {
+	// Get lowest range;
+	    if (low != -1) {
+	    	length = low;
+	      index = 0;
+	      while (index <= length) {
+	        mid = index + (length - index) / 2;
+	        if (index == length) {
+	          if(nums[index]==target)
+	            low = index;
+	          break;
+	        }
+	        if (nums[mid] >= target) {
+	        	length = mid - 1;
+	          low = mid;
+	        } else {
+	          index = mid + 1;
+	        }
+	      }
+	    }
+	  return low;
+  }
+  public int getHighestRange(int high, int mid, int index, int length, int[] nums, int target) {
+	// Get highest range;
+	    if (high != -1) {
+	      index = high;
+	      length = nums.length - 1;
+	      while (index <= length) {
+	        mid = index + (length - index) / 2;
+	        if (index == length) {
+	          if(nums[length]==target)
+	            high = length;
+	          break;
+	        }
+	        if (nums[mid] <= target) {
+	          index = mid + 1;
+	          high = mid;
+	        } else {
+	          length = mid - 1;
+	        }
+	      }
+	    }
+	  return high;
+  }
   public static void main(String[] args) {
     SearchForARange s = new SearchForARange();
     int[] nums = new int[]{1};
-    int[] r = s.searchRange(nums, 1);
-    for (int rr : r)
-      System.out.print(rr +" ");
+    int[] result = s.searchRange(nums, 1);
+    for (int resultfound : result)
+      System.out.print(resultfound +" ");
   }
 
 }

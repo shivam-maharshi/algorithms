@@ -37,8 +37,21 @@ public class SpiralMatrix {
         
         break;
       }
+      
+      createCircle(l,x,y,c,r,matrix);
 
-      // Create circle.
+      x++;
+      y++;
+
+      c -= 2;
+      r -= 2;
+    }
+
+    return l;
+  }
+  
+  public static void createCircle(List<Integer> l, int x, int y, int c, int r, int[][] matrix) {
+	// Create circle.
 
       // Move right.
       for (int i = 0; i < c - 1; i++)
@@ -55,15 +68,6 @@ public class SpiralMatrix {
       // Move up.
       for (int i = 0; i < r - 1; i++)
         l.add(matrix[y--][x]);
-
-      x++;
-      y++;
-
-      c -= 2;
-      r -= 2;
-    }
-
-    return l;
   }
 
 }

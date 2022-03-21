@@ -6,22 +6,7 @@ package recursion;
 
 public class BiNodeBSTToDLL {
 
-	public static BiNode getNode(BiNode root, boolean isLeft) {
-		if (root == null)
-			return null;
-		if (root.left == null && root.right == null)
-			return root;
-		BiNode leftTail = getNode(root.left, true);
-		BiNode rightHead = getNode(root.right, false);
-		merge(root, leftTail, rightHead);
-		if (isLeft)
-			return rightHead != null ? rightHead : root;
-		else {
-			return leftTail != null ? leftTail : root;
-		}
-	}
-
-	private static void merge(BiNode root, BiNode leftTail, BiNode rightHead) {
+	protected static void merge(BiNode root, BiNode leftTail, BiNode rightHead) {
 		root.left = leftTail;
 		if (leftTail != null)
 			leftTail.right = root;
@@ -38,7 +23,7 @@ public class BiNodeBSTToDLL {
 		BiNode six = new BiNode(6, null, null);
 		BiNode five = new BiNode(5, null, six);
 		BiNode four = new BiNode(4, two, five);
-		BiNode result = BiNodeBSTToDLL.getNode(four, false);
+		BiNode result = BiNode.getNode(four, false);
 		System.out.println(result);
 	}
 }
@@ -52,6 +37,21 @@ class BiNode {
 		this.value = value;
 		this.left = left;
 		this.right = right;
+	}
+	
+	public static BiNode getNode(BiNode root, boolean isLeft) {
+		if (root == null)
+			return null;
+		if (root.left == null && root.right == null)
+			return root;
+		BiNode leftTail = getNode(root.left, true);
+		BiNode rightHead = getNode(root.right, false);
+		BiNodeBSTToDLL.merge(root, leftTail, rightHead);
+		if (isLeft)
+			return rightHead != null ? rightHead : root;
+		else {
+			return leftTail != null ? leftTail : root;
+		}
 	}
 
 }

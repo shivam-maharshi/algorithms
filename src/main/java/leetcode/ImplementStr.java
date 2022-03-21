@@ -11,7 +11,7 @@ import junit.framework.TestCase;
  */
 public class ImplementStr extends TestCase {
 
-  public int strStr(String haystack, String needle) {
+  public int compareStrings(String haystack, String needle) {
     if (needle == null || haystack == null || needle.length() > haystack.length())
       return -1;
     if(needle.length()==0)
@@ -57,7 +57,7 @@ public class ImplementStr extends TestCase {
   @Test
   public void test() {
     ImplementStr s = new ImplementStr();
-    assertEquals(0, s.strStr("asdasda", "asd"));
+    assertEquals(0, s.compareStrings("asdasda", "asd"));
   }
 
 }

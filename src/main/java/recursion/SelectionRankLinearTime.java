@@ -30,7 +30,7 @@ public class SelectionRankLinearTime {
   }
   
   public static int getKth (int[] a, int k, int l, int h) {
-    
+    Pivotize pivot = new Pivotize();
     if ( k >= 0 && k <= h - l + 1)  {
       int n = h - l + 1; // 5 - 0 + 1
       int[] medians = new int[( n + 4 )/5]; // 10/5
@@ -47,7 +47,7 @@ public class SelectionRankLinearTime {
       // This will make a good pivot due to balanced partition.
       int mom =  j <= 1 ? medians[0] :  getKth(medians, j / 2, 0, j);
       
-      int medianPosition = pivotize(a, l, h, mom) - l;
+      int medianPosition = pivot.pivotize(a, l, h, mom) - l;
       
       if (medianPosition == k)
         return a[medianPosition + l];
@@ -56,25 +56,6 @@ public class SelectionRankLinearTime {
       return getKth(a, k-1, l, l + medianPosition - 1 );
     }
     return Integer.MAX_VALUE;
-  }
-  
-  public static int pivotize(int[] a, int l, int h, int n) {
-    while (h > l) {
-      if (a[l] < n)
-        l++;
-      else if(a[h] > n)
-        h--;
-      else {
-        swap(a, l, h);
-      }
-    }
-    return l;
-  }
-  
-  public static void swap(int[] a, int l, int h) {
-    int temp = a[l];
-    a[l] = a[h];
-    a[h] = temp;
   }
 
 }
