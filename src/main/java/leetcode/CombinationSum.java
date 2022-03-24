@@ -12,10 +12,9 @@ import java.util.List;
 public class CombinationSum {
 
 	public static void main(String[] args) {
-		PrintCombination print = new PrintCombination();
 		int[] c = new int[] { 2, 3, 6, 7 };
 		List<List<Integer>> l = combinationSum(c, 7);
-		print.print(l);
+		print(l);
 	}
 
 	public static List<List<Integer>> combinationSum(int[] candidates, int target) {
@@ -23,6 +22,15 @@ public class CombinationSum {
 		List<List<Integer>> l = new ArrayList<List<Integer>>();
 		getCombinations(candidates, target, 0, l, new ArrayList<Integer>());
 		return l;
+	}
+	
+	public static void print(List<List<Integer>> l) {
+		for (List<Integer> ll : l) {
+			for (Integer n : ll) {
+				System.out.print(n + " ");
+			}
+			System.out.println();
+		}
 	}
 
 	public static void getCombinations(int[] c, int t, int i, List<List<Integer>> l, List<Integer> res) {
