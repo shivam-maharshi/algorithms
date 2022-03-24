@@ -9,7 +9,7 @@ package recursion;
  * 
  * @author shivam.maharshi
  */
-public class SelectionRank {
+public class SelectionRank extends RankAlgorithm{
 
 	public static int find(int[] a, int n) {
 		return n >= a.length ? Integer.MAX_VALUE : find(a, n - 1, 0, a.length - 1);
@@ -17,8 +17,7 @@ public class SelectionRank {
 
 	// This is expected linear time.
 	public static int find(int[] a, int n, int l, int h) {
-		Pivotize pivot = new Pivotize();
-		int pos = pivot.pivotize(a, l, h, a[l]);
+		int pos = pivotize(a, l, h, a[l]);
 		if (pos == n)
 			return a[pos];
 		else if (pos > n)
