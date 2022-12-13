@@ -12,7 +12,7 @@ import java.util.Arrays;
  * 
  * @author shivam.maharshi
  */
-public class SelectionRankLinearTime {
+public class SelectionRankLinearTime extends RankAlgorithm {
   
   public static void main(String[] args) {
     int[] a = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
@@ -30,7 +30,6 @@ public class SelectionRankLinearTime {
   }
   
   public static int getKth (int[] a, int k, int l, int h) {
-    
     if ( k >= 0 && k <= h - l + 1)  {
       int n = h - l + 1; // 5 - 0 + 1
       int[] medians = new int[( n + 4 )/5]; // 10/5
@@ -56,25 +55,6 @@ public class SelectionRankLinearTime {
       return getKth(a, k-1, l, l + medianPosition - 1 );
     }
     return Integer.MAX_VALUE;
-  }
-  
-  public static int pivotize(int[] a, int l, int h, int n) {
-    while (h > l) {
-      if (a[l] < n)
-        l++;
-      else if(a[h] > n)
-        h--;
-      else {
-        swap(a, l, h);
-      }
-    }
-    return l;
-  }
-  
-  public static void swap(int[] a, int l, int h) {
-    int temp = a[l];
-    a[l] = a[h];
-    a[h] = temp;
   }
 
 }
