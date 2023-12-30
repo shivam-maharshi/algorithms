@@ -1,7 +1,7 @@
 package math;
 
 /**
- * Given a number n, count the number of two’s present till that number.
+ * Given a number n, count the number of two present till that number.
  * 
  * @author shivam.maharshi
  */

@@ -2,7 +2,7 @@ package math;
 
 /**
  * Check if the given number is a Fibonacci number. A number is Fibonacci if and
- * only if one or both of (5*n2 + 4) or (5*n2 – 4) is a perfect square
+ * only if one or both of (5*n2 + 4) or (5*n2 - 4) is a perfect square
  * 
  * Link: http://www.geeksforgeeks.org/check-number-fibonacci-number/
  * 

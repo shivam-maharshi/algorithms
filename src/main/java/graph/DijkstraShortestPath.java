@@ -4,9 +4,9 @@ import java.util.Arrays;
 
 /**
  * Given a graph and a source vertex in graph, find shortest paths from source
- * to all vertices in the given graph. Dijkstra’s algorithm doesn’t work for
+ * to all vertices in the given graph. Dijkstra's algorithm doesn't work for
  * graphs with negative weight edges. For graphs with negative weight edges,
- * Bellman–Ford algorithm can be used.
+ * Bellman Ford algorithm can be used.
  * 
  * Link:
  * http://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-

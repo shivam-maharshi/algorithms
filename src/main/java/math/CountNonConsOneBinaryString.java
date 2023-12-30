@@ -2,7 +2,7 @@ package math;
 
 /**
  * Given a positive integer N, count all possible distinct binary strings of
- * length N such that there are no consecutive 1’s.
+ * length N such that there are no consecutive 1s.
  * 
  * Link:
  * http://www.geeksforgeeks.org/count-number-binary-strings-without-consecutive-

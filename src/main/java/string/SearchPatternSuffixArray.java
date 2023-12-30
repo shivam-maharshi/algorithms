@@ -10,7 +10,7 @@ import java.util.List;
  * Benefits of using suffix array over Trie, which is simpler also is less
  * memory usage and increased cache localization.
  * 
- * It is preferred over KMP, Rabin Karp, Boyer Moore when text doesn’t doesn’t
+ * It is preferred over KMP, Rabin Karp, Boyer Moore when text doesn't
  * change very frequently and there are many search queries. This is because
  * pattern length is considerably smaller than the text length.
  * 

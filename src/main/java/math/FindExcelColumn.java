@@ -1,9 +1,9 @@
 package math;
 
 /**
- * MS Excel columns has a pattern like A, B, C, … ,Z, AA, AB, AC,…. ,AZ, BA, BB,
- * … ZZ, AAA, AAB ….. etc. In other words, column 1 is named as “A”, column 2 as
- * “B”, column 27 as “AA”.
+ * MS Excel columns has a pattern like A, B, C, more , Z, AA, AB, AC, more ,AZ, BA, BB,
+ * more ZZ, AAA, AAB, more. In other words, column 1 is named as A, column 2 as
+ * B, column 27 as AA.
  * 
  * Link: http://www.geeksforgeeks.org/find-excel-column-name-given-number/
  * 

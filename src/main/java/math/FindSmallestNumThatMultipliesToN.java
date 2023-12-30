@@ -1,8 +1,8 @@
 package math;
 
 /**
- * Given a number ‘n’, find the smallest number ‘p’ such that if we multiply all
- * digits of ‘p’, we get ‘n’. The result ‘p’ should have minimum two digits.
+ * Given a number n, find the smallest number p such that if we multiply all
+ * digits of p, we get n. The result p should have minimum two digits.
  * 
  * Link:
  * http://www.geeksforgeeks.org/find-smallest-number-whose-digits-multiply-given

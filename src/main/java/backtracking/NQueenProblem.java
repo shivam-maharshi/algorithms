@@ -1,7 +1,7 @@
 package backtracking;
 
 /**
- * The N Queen is the problem of placing N chess queens on an N×N chessboard so
+ * The N Queen is the problem of placing N chess queens on an N*N chessboard so
  * that no two queens attack each other.
  * 
  * Link: http://www.geeksforgeeks.org/backtracking-set-3-n-queen-problem/

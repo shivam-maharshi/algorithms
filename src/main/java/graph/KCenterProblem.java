@@ -20,9 +20,9 @@ public class KCenterProblem {
 	 * The fundamental is very interesting. Add zero node to the added set. Then
 	 * find another node which is farthest from the nodes present in this set.
 	 * Add this node to the Added Set and repeat the process. A node is
-	 * considered farthest from a set when the its minimum distance from all the
+	 * considered farthest from a set when its minimum distance from all the
 	 * nodes present in this set is maximum as compared to the other nodes.
-	 * Min[dist(p, c1), dist(p, c2), dist(p, c3), …. dist(p, ci)]
+	 * Min[dist(p, c1), dist(p, c2), dist(p, c3). dist(p, ci)]
 	 */
 	public static void solve(int[][] graph, int k) {
 		boolean[] added = new boolean[graph.length];

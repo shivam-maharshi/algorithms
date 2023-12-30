@@ -2,8 +2,8 @@ package math;
 
 /**
  * Horners polynomial evaluation method. Given a polynomial of the form cnxn +
- * cn-1xn-1 + cn-2xn-2 + … + c1x + c0 and a value of x, find the value of
- * polynomial for a given value of x. Here cn, cn-1, .. are integers (may be
+ * cn-1xn-1 + cn-2xn-2 + more + c1x + c0 and a value of x, find the value of
+ * polynomial for a given value of x. Here cn, cn-1, etc. are integers (maybe
  * negative) and n is a positive integer.
  * 
  * Link: http://www.geeksforgeeks.org/horners-method-polynomial-evaluation/
