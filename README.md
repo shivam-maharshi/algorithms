@@ -34,4 +34,4 @@ This repository contains some algorithms and data structures mostly implemented 
 * [String](https://github.com/shivam-maharshi/Algorithms/tree/master/src/main/java/string)
 
 ## [Run Build](https://github.com/shivam-maharshi/algorithms)
-* `gradle wrapper --gradle-version 2.0`
+* `gradle build`
