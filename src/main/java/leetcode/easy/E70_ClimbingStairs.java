@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class E70_ClimbingStairs extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(3, climbStairs(3));
   }
 

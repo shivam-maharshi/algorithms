@@ -15,7 +15,7 @@ import junit.framework.TestCase;
 public class ThreeSumZero extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     ArrayList<Integer> a = new ArrayList<>();
     a.add(-1);
     a.add(-1);

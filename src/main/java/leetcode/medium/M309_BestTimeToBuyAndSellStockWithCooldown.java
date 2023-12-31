@@ -13,7 +13,7 @@ import junit.framework.TestCase;
 public class M309_BestTimeToBuyAndSellStockWithCooldown extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(3, maxProfit(new int[] { 1, 2, 3, 0, 2 }));
   }
 

@@ -14,7 +14,7 @@ import junit.framework.TestCase;
 public class EvaluateExpressionToTrue extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(1, cnttrue("T|T"));
     assertEquals(0, cnttrue("F|F"));
     assertEquals(1, cnttrue("T|F"));

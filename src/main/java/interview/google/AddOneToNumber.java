@@ -15,7 +15,7 @@ import junit.framework.TestCase;
 public class AddOneToNumber extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     ArrayList<Integer> l = new ArrayList<>();
     l.add(1);
     l.add(2);

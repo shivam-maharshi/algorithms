@@ -16,7 +16,7 @@ import junit.framework.TestCase;
 public class RemoveDuplicatesFromSortedArray extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     ArrayList<Integer> l = new ArrayList<>();
     l.add(1);
     l.add(1);

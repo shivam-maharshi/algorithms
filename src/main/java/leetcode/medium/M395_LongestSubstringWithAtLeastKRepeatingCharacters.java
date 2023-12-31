@@ -19,7 +19,7 @@ import junit.framework.TestCase;
 public class M395_LongestSubstringWithAtLeastKRepeatingCharacters extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(0, longestSubstring("", 1));
     assertEquals(0, longestSubstring("", 7));
     assertEquals(8, longestSubstring("abcdabcd", 1));

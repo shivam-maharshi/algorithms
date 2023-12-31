@@ -16,7 +16,7 @@ import junit.framework.TestCase;
 public class MaxDistance extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(4, maximumGap(Arrays.asList(new Integer[] {10, 8, 12, 7, 5, 6, 4, 8})));
     assertEquals(6, maximumGap(Arrays.asList(new Integer[] {34, 8, 10, 3, 2, 80, 30, 33, 1})));
     assertEquals(8, maximumGap(Arrays.asList(new Integer[] {9, 2, 3, 4, 5, 6, 7, 8, 18, 0})));

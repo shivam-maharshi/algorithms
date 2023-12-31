@@ -15,7 +15,7 @@ import junit.framework.TestCase;
 public class OptimalBinarySearchTree extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(118, min(new int[] { 10, 12 }, new int[] { 34, 50 }));
     assertEquals(142, min(new int[] { 10, 12, 20 }, new int[] { 34, 8, 50 }));
   }

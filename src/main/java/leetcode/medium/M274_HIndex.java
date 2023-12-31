@@ -14,7 +14,7 @@ import junit.framework.TestCase;
 public class M274_HIndex extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(0, hIndex(new int[] {}));
     assertEquals(1, hIndex(new int[] { 1 }));
     assertEquals(1, hIndex(new int[] { 100 }));

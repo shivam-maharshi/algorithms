@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class M152_MaximumProductSubarray extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(6, maxProduct(new int[] { 2, 3, -2, 4 }));
     assertEquals(32, maxProduct(new int[] { -2, -2, -2, -4 }));
     assertEquals(32, maxProduct(new int[] { 2, -2, -2, 4 }));

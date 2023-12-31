@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class M130_SurroundedRegions extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     char[][] c = new char[][] { { 'X', 'X', 'X', 'X' }, { 'X', 'O', 'O', 'X' }, { 'X', 'X', 'O', 'X' },
         { 'X', 'O', 'X', 'X' } };
     solve(c);

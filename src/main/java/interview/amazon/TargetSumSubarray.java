@@ -16,7 +16,7 @@ import junit.framework.TestCase;
 public class TargetSumSubarray extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(null, getSum(null, 10));
     assertEquals(null, getSum(new int[] {}, 10));
     assertEquals(2, getSum(new int[] { 1, 1, 3, 4, 2 }, 6).size());

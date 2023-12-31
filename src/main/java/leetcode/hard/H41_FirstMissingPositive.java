@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class H41_FirstMissingPositive extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(3, firstMissingPositive(new int[] { 1, 2, 0 }));
     assertEquals(2, firstMissingPositive(new int[] { 3, 4, -1, 1 }));
     assertEquals(6, firstMissingPositive(new int[] { 1, 3, 4, -1, 1, 5, 2 }));

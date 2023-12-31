@@ -15,7 +15,7 @@ import junit.framework.TestCase;
 public class Array3Pointers extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(5, minimize(Arrays.asList(new Integer[] { 1, 4, 10 }), Arrays.asList(new Integer[] { 2, 15, 20 }),
         Arrays.asList(new Integer[] { 10, 12 })));
   }

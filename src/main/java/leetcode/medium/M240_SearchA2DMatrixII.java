@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class M240_SearchA2DMatrixII extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(true, searchMatrix(new int[][] { { 0 } }, 0));
     assertEquals(false, searchMatrix(new int[][] { { 0 } }, 1));
     assertEquals(true, searchMatrix(new int[][] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } }, 7));

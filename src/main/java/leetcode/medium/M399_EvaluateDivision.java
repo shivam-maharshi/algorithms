@@ -15,7 +15,7 @@ import junit.framework.TestCase;
 public class M399_EvaluateDivision extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     String[][] equations = { { "a", "b" }, { "b", "c" } };
     double[] values = new double[] { 2.0, 3.0 };
     String[][] queries = { { "b", "c" } };

@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class M390_EliminationGame extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(1, lastRemaining(1));
     assertEquals(2, lastRemaining(2));
     assertEquals(2, lastRemaining(3));

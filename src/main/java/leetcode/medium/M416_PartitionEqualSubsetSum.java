@@ -14,7 +14,7 @@ import junit.framework.TestCase;
 public class M416_PartitionEqualSubsetSum extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     // assertEquals(false, canPartition(null));
     // assertEquals(false, canPartition(new int[] {}));
     // assertEquals(false, canPartition(new int[] { 1 }));

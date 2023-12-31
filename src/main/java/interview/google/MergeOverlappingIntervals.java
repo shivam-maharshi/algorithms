@@ -16,7 +16,7 @@ import junit.framework.TestCase;
 public class MergeOverlappingIntervals extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     ArrayList<Interval> l = new ArrayList<>();
     l.add(new Interval(4, 4));
     l.add(new Interval(5, 27));

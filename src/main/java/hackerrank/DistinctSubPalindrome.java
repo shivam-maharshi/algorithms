@@ -14,7 +14,7 @@ import junit.framework.TestCase;
  */
 public class DistinctSubPalindrome extends TestCase {
 
-  public static void test() {
+  public void test() {
     assertEquals(5, palindrome("aabaa"));
     assertEquals(1, palindrome("a"));
     assertEquals(0, palindrome(""));

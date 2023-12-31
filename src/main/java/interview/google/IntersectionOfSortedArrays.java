@@ -16,7 +16,7 @@ import junit.framework.TestCase;
 public class IntersectionOfSortedArrays extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(4, intersect(Arrays.asList(new Integer[]{1,2,3,3,4,5,6}), Arrays.asList(new Integer[] {0,1,3,4,5})).size());
     assertEquals(1, intersect(Arrays.asList(new Integer[]{10000000}), Arrays.asList(new Integer[] {10000000})).size());
   }

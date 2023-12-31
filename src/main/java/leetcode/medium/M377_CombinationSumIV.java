@@ -14,7 +14,7 @@ import junit.framework.TestCase;
 public class M377_CombinationSumIV extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(7, combinationSum4(new int[] { 1, 2, 3 }, 4));
     assertEquals(0, combinationSum4(new int[] { 10, 20, 30 }, 4));
     assertEquals(1, combinationSum4(new int[] { 4 }, 4));

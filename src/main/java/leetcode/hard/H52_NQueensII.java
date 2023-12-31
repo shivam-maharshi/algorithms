@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class H52_NQueensII extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(0, totalNQueens(0));
     assertEquals(1, totalNQueens(1));
     assertEquals(0, totalNQueens(2));

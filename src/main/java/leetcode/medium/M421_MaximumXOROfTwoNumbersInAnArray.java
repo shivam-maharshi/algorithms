@@ -15,7 +15,7 @@ import junit.framework.TestCase;
 public class M421_MaximumXOROfTwoNumbersInAnArray extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(28, findMaximumXOR(new int[] { 3, 10, 5, 25, 2, 8 }));
   }
 

@@ -14,7 +14,7 @@ import junit.framework.TestCase;
 public class ModifiedRegex extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(true, match("abccd", "a*.*d"));
     assertEquals(false, match("abccd", "a*.*c"));
     assertEquals(false, match("a", "*"));

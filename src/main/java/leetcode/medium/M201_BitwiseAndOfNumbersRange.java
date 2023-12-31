@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class M201_BitwiseAndOfNumbersRange extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(5, rangeBitwiseAnd(5, 5));
     assertEquals(4, rangeBitwiseAnd(5, 7));
     assertEquals(10231880, rangeBitwiseAnd(10231881, 10231882));

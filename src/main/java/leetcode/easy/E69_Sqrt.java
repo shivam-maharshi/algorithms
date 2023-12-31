@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class E69_Sqrt extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
      assertEquals(0, mySqrt(0));
      assertEquals(1, mySqrt(1));
      assertEquals(1, mySqrt(2));

@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class IsPossible extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals("Yes", isPossible(1, 4, 1, 4));
     assertEquals("Yes", isPossible(1, 4, 5, 9));
     assertEquals("No", isPossible(1, 4, 5, 10));

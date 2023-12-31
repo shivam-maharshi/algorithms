@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class M318_MaximumProductOfWordLengths extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(16, maxProduct(new String[] { "abcw", "baz", "foo", "bar", "xtfn", "abcdef" }));
     assertEquals(0, maxProduct(new String[] {"a", "aa", "aaa", "aaaa"}));
   }

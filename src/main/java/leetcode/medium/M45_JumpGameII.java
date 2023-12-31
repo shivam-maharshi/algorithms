@@ -14,7 +14,7 @@ import junit.framework.TestCase;
 public class M45_JumpGameII extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(0, jump(new int[] {}));
     assertEquals(2, jump(new int[] { 2, 3, 1, 1, 4 }));
     assertEquals(4, jump(new int[] { 1, 1, 1, 1, 1 }));

@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class E268_MissingNumber extends TestCase {
   
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(2, missingNumber(new int[]{0,1,3}));
     assertEquals(0, missingNumber(new int[]{1,2,3}));
     assertEquals(7, missingNumber(new int[]{0,1,2,3,4,5,6,8,9}));

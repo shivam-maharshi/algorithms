@@ -14,7 +14,7 @@ import junit.framework.TestCase;
 public class WildPatternMatching extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(true, match("abccd", "a*.*d"));
     assertEquals(false, match("abccd", "a*.*c"));
     assertEquals(true, match("a", "a*"));

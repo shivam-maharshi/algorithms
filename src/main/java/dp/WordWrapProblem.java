@@ -14,7 +14,7 @@ import junit.framework.TestCase;
 public class WordWrapProblem extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(13, get(new int[] { 5, 3, 5, 8, 4, 4, 7 }, 15));
   }
 

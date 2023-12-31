@@ -6,6 +6,14 @@ repositories {
     mavenCentral()
 }
 
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/java']
+        }
+    }
+}
+
 compileJava { 
     options.encoding = "UTF-8" 
 }

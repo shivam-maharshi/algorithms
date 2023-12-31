@@ -14,7 +14,7 @@ import junit.framework.TestCase;
 public class KthRowOfPascalsTriangle extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(0, getRow(-1).size());
     assertEquals(1, getRow(0).size());
     assertEquals(2, getRow(1).size());

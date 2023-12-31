@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class GridUniquePaths extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(1, uniquePaths(1, 2));
     assertEquals(1, uniquePaths(2, 1));
     assertEquals(2, uniquePaths(2, 2));

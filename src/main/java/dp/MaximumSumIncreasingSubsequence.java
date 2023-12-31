@@ -15,7 +15,7 @@ import junit.framework.TestCase;
 public class MaximumSumIncreasingSubsequence extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(106, maxSumSub(new int[] { 1, 101, 2, 3, 100, 4, 5 }));
     assertEquals(306, maxSumSub(new int[] { 1, 105, 2, 3, 200, 4, 5 }));
   }

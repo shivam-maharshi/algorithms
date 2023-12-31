@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class M343_IntegerBreak extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(1, integerBreak(2));
     assertEquals(2, integerBreak(3));
     assertEquals(4, integerBreak(4));

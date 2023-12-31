@@ -14,7 +14,7 @@ public class H329_LongestIncreasingPathInAMatrix extends TestCase {
   public static final int[][] p = new int[][] { { 0, 1 }, { 1, 0 }, { 0, -1 }, { -1, 0 } };
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(4, longestIncreasingPath(new int[][] { { 9, 9, 4 }, { 6, 6, 8 }, { 2, 1, 1 } }));
     assertEquals(4, longestIncreasingPath(new int[][] { { 3, 4, 5 }, { 3, 2, 6 }, { 2, 2, 1 } }));
     assertEquals(7, longestIncreasingPath(new int[][] { { 9, 8, 4, 3, 2 }, { 6, 6, 8, 5, 1 }, { 2, 1, 1, 0, 0 } }));

@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class M162_FindPeakElement extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(0, findPeakElement(new int[] { 1 }));
     assertEquals(2, findPeakElement(new int[] { 1, 2, 3, 1 }));
     assertEquals(3, findPeakElement(new int[] { 1, 2, 3, 4 }));

@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class PathToFormTargetNumber extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     Tree root = new Tree(3);
     Tree l = new Tree(4);
     Tree r = new Tree(5);

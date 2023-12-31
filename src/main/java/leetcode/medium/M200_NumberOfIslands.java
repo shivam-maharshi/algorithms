@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class M200_NumberOfIslands extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(1, numIslands(new char[][] { { '1', '1', '1', '1', '0' }, { '1', '1', '0', '1', '0' },
         { '1', '1', '0', '0', '0' }, { '0', '0', '0', '0', '0' } }));
     assertEquals(3, numIslands(new char[][] { { '1', '1', '0', '0', '0' }, { '1', '1', '0', '0', '0' },

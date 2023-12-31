@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class M393_UTF8Validation extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(true, validUtf8(new int[]{197, 130, 1}));
     assertEquals(false, validUtf8(new int[]{235, 140, 4}));
     assertEquals(false, validUtf8(new int[]{235}));

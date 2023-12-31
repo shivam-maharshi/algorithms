@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class M375_GuessNumberHigherOrLowerII extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(0, getMoneyAmount(1));
     assertEquals(1, getMoneyAmount(2));
     assertEquals(2, getMoneyAmount(3));

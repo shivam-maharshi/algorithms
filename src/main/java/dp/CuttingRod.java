@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class CuttingRod extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(22, max(new int[] { 1, 5, 8, 9, 10, 17, 17, 20 }, 8));
   }
 

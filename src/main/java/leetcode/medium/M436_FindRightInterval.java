@@ -17,7 +17,7 @@ import junit.framework.TestCase;
 public class M436_FindRightInterval extends TestCase {
   
   @Test
-  public static void test() {
+  public void test() {
     int[] r = findRightInterval(new Interval[]{new Interval(3, 4), new Interval(2, 3), new Interval(1, 2)});
     assertEquals(-1, r[0]);
     assertEquals(0, r[1]);

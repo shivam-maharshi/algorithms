@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class M61_RotateList extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     ListNode o = new ListNode(1);
     ListNode t = new ListNode(2);
     ListNode th = new ListNode(3);

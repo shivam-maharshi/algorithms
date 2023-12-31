@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class M215_KthLargestElementInAnArray extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(-1, findKthLargest(new int[] {}, 1));
     assertEquals(3, findKthLargest(new int[] { 3 }, 1));
     assertEquals(3, findKthLargest(new int[] { 3, 3 }, 1));

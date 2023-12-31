@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class M264_UglyNumberII extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(1, nthUglyNumber(1));
     assertEquals(2, nthUglyNumber(2));
     assertEquals(3, nthUglyNumber(3));

@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class H330_PatchingArray extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(1, minPatches(new int[] { 1, 3 }, 6));
     assertEquals(2, minPatches(new int[] { 1, 5, 10 }, 20));
   }

@@ -16,7 +16,7 @@ import junit.framework.TestCase;
 public class SumPairs extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(0, count(new int[] {}, 6));
     assertEquals(2, count(new int[] { 1, 2, 3, 4, 5, 6 }, 6));
     assertEquals(1, count(new int[] { 1, 2, 3, 4, 5, 5 }, 10));

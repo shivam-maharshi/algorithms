@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class FindHeavyCoin extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(1, find(new int[] { 5, 8 }));
     assertEquals(0, find(new int[] { 8, 5 }));
     assertEquals(0, find(new int[] { 8, 5, 5 }));

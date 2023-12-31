@@ -13,7 +13,7 @@ import junit.framework.TestCase;
 public class WordExists extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(false, exists(new char[0][0], "bake"));
     char[][] c = {{'a', 'b', 'c', 'd'}, {'k', 'a', 'g', 'h'}, {'e', 'f', 'g', 'h'}};
     assertEquals(true, exists(c, "bake"));

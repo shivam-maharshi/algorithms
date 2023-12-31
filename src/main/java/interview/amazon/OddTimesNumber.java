@@ -15,7 +15,7 @@ import junit.framework.TestCase;
 public class OddTimesNumber extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(5, get(Arrays.asList(new Integer[] { 1, 4, 2, 2, 7, 5, 7, 4, 1 })).intValue());
   }
 

@@ -13,7 +13,7 @@ import junit.framework.TestCase;
 public class PrintMaximumAWithFourKeys extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(3, max(3));
     assertEquals(9, max(7));
   }

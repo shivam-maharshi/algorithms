@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class E367_ValidPerfectSquare extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(1, roundAroundMid(0.5));
     assertEquals(0, roundAroundMid(0.49));
     assertEquals(1, roundAroundMid(0.99));

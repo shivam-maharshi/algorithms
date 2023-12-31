@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class M423_ReconstructOriginalDigitsFromEnglish extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals("012", originalDigits("owoztneoer"));
     assertEquals("45", originalDigits("fviefuro"));
     assertEquals("00", originalDigits("zerozero"));

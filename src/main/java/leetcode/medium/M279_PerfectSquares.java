@@ -14,7 +14,7 @@ import junit.framework.TestCase;
 public class M279_PerfectSquares extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(1, numSquares(1));
     assertEquals(2, numSquares(2));
     assertEquals(3, numSquares(3));

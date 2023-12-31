@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class M153_FindMinimumInRotatedSortedArray extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(0, findMin(new int[] { 0 }));
     assertEquals(0, findMin(new int[] { 0, 1 }));
     assertEquals(0, findMin(new int[] { 1, 0 }));

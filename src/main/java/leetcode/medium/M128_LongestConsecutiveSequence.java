@@ -15,7 +15,7 @@ import junit.framework.TestCase;
 public class M128_LongestConsecutiveSequence extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     //assertEquals(0, longestConsecutive(null));
     assertEquals(0, longestConsecutive(new int[] { }));
     assertEquals(1, longestConsecutive(new int[] { 100, 4, 200, 6}));

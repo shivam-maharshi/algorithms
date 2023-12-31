@@ -22,7 +22,7 @@ import junit.framework.TestCase;
 public class H126_WordLadderII extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     // Test 1
     Set<String> s = new HashSet<>();
     s.addAll(Arrays.asList(new String[] { "hot", "dot", "dog", "lot", "log" }));

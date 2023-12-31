@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class M413_ArithmeticSlices extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(3, numberOfArithmeticSlices(new int[]{1, 2, 3, 4}));
     assertEquals(9, numberOfArithmeticSlices(new int[]{1, 2, 3, 4, 6, 8, 10, 7, 4, 1}));
     assertEquals(0, numberOfArithmeticSlices(new int[]{1, 2}));

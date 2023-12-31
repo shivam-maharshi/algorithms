@@ -11,7 +11,7 @@ import org.junit.Test;
 public class M2096_StepByStepBinaryTreeTraversal extends TestCase {
 
     @Test
-    public static void test() {
+    public void test() {
         assertEquals("UURL", getDirections(null, 3, 6));
     }
 

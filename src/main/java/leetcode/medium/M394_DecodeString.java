@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class M394_DecodeString extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals("aaabcbc", decodeString("3[a]2[bc]"));
     assertEquals("abcabccdcdcdef", decodeString("2[abc]3[cd]ef"));
     assertEquals("accaccacc", decodeString("3[a2[c]]"));

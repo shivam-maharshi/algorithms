@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class M80_RemoveDuplicatesFromSortedArrayII extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(0, removeDuplicates(new int[] {}));
     assertEquals(2, removeDuplicates(new int[] { 1, 1 }));
     assertEquals(2, removeDuplicates(new int[] { 1, 2 }));

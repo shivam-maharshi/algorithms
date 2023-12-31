@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class M55_JumpGame extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(true, canJump(new int[]{2}));
     assertEquals(true, canJump(new int[]{2,3}));
     assertEquals(false, canJump(new int[]{0,1}));

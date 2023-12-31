@@ -15,7 +15,7 @@ import junit.framework.TestCase;
 public class BetweenTwoSets extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     int[] a = new int[] { 2, 4 };
     int[] b = new int[] { 16, 32, 96 };
     assertEquals(3, get(a, b));

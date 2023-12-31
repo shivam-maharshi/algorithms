@@ -14,7 +14,7 @@ import junit.framework.TestCase;
 public class M71_SimplifyPath extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals("/", simplifyPath("/.."));
     assertEquals("/c", simplifyPath("/a/./b/../../c/"));
     assertEquals("/c", simplifyPath("/c/"));

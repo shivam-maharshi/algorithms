@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class AlphabetSeries extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(1, compute("a"));
     assertEquals(5, compute("ab"));
     assertEquals(1302061344, compute("l"));

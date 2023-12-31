@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class GCD extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(0, gcd(2, 0));
     assertEquals(2, gcd(2, 2));
     assertEquals(2, gcd(2, 4));

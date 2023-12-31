@@ -18,7 +18,7 @@ import junit.framework.TestCase;
 public class M368_LargestDivisibleSubset extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(0, largestDivisibleSubset(new int[] {}).size());
     assertEquals(1, largestDivisibleSubset(new int[] { 1 }).size());
     assertEquals(2, largestDivisibleSubset(new int[] { 1, 2, 3 }).size());

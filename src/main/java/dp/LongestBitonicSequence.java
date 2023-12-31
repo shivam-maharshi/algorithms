@@ -13,7 +13,7 @@ import junit.framework.TestCase;
 public class LongestBitonicSequence extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(6, get(new int[] { 1, 11, 2, 10, 4, 5, 2, 1 }));
     assertEquals(5, get(new int[] { 12, 11, 40, 5, 3, 1 }));
     assertEquals(5, get(new int[] { 80, 60, 30, 40, 20, 10 }));

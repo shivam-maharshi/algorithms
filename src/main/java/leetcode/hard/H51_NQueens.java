@@ -15,7 +15,7 @@ import junit.framework.TestCase;
 public class H51_NQueens extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(1, solveNQueens(1).size());
     assertEquals(0, solveNQueens(2).size());
     assertEquals(0, solveNQueens(3).size());

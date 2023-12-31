@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class M357_CountNumbersWithUniqueDigits extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(1, countNumbersWithUniqueDigits(0));
     assertEquals(10, countNumbersWithUniqueDigits(1));
     assertEquals(91, countNumbersWithUniqueDigits(2));

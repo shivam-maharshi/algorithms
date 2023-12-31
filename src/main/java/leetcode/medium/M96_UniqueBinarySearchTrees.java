@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class M96_UniqueBinarySearchTrees extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(5, numTrees(3));
   }
 

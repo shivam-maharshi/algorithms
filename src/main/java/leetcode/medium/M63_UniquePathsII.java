@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class M63_UniquePathsII extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     int[][] a = new int[][] { { 0, 0 }, { 1, 0 } };
     assertEquals(1, uniquePathsWithObstacles(a));
     int[][] b = new int[][] { { 0, 0, 0 }, { 1, 0, 0 }, { 0, 1, 0 } };

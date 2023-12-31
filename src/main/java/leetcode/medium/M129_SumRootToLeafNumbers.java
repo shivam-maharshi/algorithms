@@ -15,7 +15,7 @@ import junit.framework.TestCase;
 public class M129_SumRootToLeafNumbers extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(0, sumNumbers(null));
     TreeNode root = new TreeNode(1);
     assertEquals(1, sumNumbers(root));

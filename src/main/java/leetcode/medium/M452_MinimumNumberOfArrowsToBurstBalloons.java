@@ -16,7 +16,7 @@ import junit.framework.TestCase;
 public class M452_MinimumNumberOfArrowsToBurstBalloons extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(2, findMinArrowShots(new int[][] { { 10, 16 }, { 2, 8 }, { 1, 6 }, { 7, 12 } }));
   }
 

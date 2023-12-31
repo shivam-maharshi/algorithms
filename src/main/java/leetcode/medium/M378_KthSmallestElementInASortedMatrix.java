@@ -15,7 +15,7 @@ import junit.framework.TestCase;
 public class M378_KthSmallestElementInASortedMatrix extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     int[][] m = new int[][] { { 1, 5, 9 }, { 3, 6, 13 }, { 12, 13, 15 } };
     assertEquals(13, kthSmallest(m, 8));
     m = new int[][] { { 8, 9 }, { 9, 13 } };

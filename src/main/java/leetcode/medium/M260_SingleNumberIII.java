@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class M260_SingleNumberIII extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(5, singleNumber(new int[] { 3, 5 })[0]);
   }
 

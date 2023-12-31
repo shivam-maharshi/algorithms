@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class M50_Pow extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(-64.0, myPow(-4, 3));
     assertEquals(0.0, myPow(0, 1));
     assertEquals(64.0, myPow(4, 3));

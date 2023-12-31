@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class M33_SearchInRotatedSortedArray extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(-1, search(null, 1));
     assertEquals(-1, search(new int[] {}, 1));
     assertEquals(-1, search(new int[] { 1 }, 2));

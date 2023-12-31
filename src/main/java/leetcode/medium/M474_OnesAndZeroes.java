@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class M474_OnesAndZeroes extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(4, findMaxForm(new String[] { "10", "0001", "111001", "1", "0" }, 5, 3));
     assertEquals(2, findMaxForm(new String[] { "10", "1", "0" }, 1, 1));
     assertEquals(3, findMaxForm(new String[] { "11", "1", "1", "0" }, 1, 2));

@@ -17,7 +17,7 @@ import junit.framework.TestCase;
 public class M89_GrayCode extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     List<Integer> r = grayCode(3);
     for (int n : r)
       System.out.print(n + " ");

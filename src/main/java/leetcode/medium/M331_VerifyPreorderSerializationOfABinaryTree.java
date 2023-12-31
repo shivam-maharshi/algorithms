@@ -15,7 +15,7 @@ import junit.framework.TestCase;
 public class M331_VerifyPreorderSerializationOfABinaryTree extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(true, isValidSerialization("#"));
     assertEquals(true, isValidSerialization("9,#,#"));
     assertEquals(false, isValidSerialization("#,#"));

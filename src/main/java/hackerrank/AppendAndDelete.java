@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class AppendAndDelete extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals("Yes", convert("hacker", "hackerrank", 4));
     assertEquals("No", convert("hacker", "hackerrank", 3));
     assertEquals("Yes", convert("hacker", "hackerrank", 6));

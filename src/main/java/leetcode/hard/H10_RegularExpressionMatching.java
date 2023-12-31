@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class H10_RegularExpressionMatching extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(true, isMatch("abccd", "a*.*d"));
     assertEquals(false, isMatch("abccd", "a*.*c"));
     assertEquals(true, isMatch("a", "a*"));

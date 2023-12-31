@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class M424_LongestRepeatingCharacterReplacement extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(4, characterReplacement("ABAB", 2));
     assertEquals(4, characterReplacement("AABABBA", 1));
     assertEquals(1, characterReplacement("A", 0));

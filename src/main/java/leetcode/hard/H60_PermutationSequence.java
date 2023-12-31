@@ -15,7 +15,7 @@ import junit.framework.TestCase;
 public class H60_PermutationSequence extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     //assertEquals(getPermutation(3, 1), "123");
     assertEquals(getPermutation(3, 2), "132");
     //assertEquals(getPermutation(3, 3), "213");

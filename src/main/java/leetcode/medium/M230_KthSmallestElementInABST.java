@@ -14,7 +14,7 @@ import junit.framework.TestCase;
 public class M230_KthSmallestElementInABST extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     TreeNode l = new TreeNode(1), r = new TreeNode(3), n = new TreeNode(2);
     n.left = l;
     n.right = r;

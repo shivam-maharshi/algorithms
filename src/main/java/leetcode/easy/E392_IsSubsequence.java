@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class E392_IsSubsequence extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(true, isSubsequence("abc", "ahbgdc"));
     assertEquals(false, isSubsequence("axc", "ahbgdc"));
     assertEquals(true, isSubsequence("", ""));

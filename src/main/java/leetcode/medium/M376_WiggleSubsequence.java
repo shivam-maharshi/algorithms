@@ -15,7 +15,7 @@ import junit.framework.TestCase;
 public class M376_WiggleSubsequence extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
     assertEquals(0, wiggleMaxLength(null));
     assertEquals(0, wiggleMaxLength(new int[] {}));
     assertEquals(1, wiggleMaxLength(new int[] { 0 }));

@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class H327_CountOfRangeSum extends TestCase {
 
   @Test
-  public static void test() {
+  public void test() {
   }
 
   public static int countRangeSum(int[] nums, int lower, int upper) {
