@@ -39,7 +39,8 @@ public class M2_AddTwoNumbers {
 		ListNode l1 = new ListNode(1);
 		l1.next = new ListNode(8);
 		ListNode l2 = new ListNode(0);
-		new M2_AddTwoNumbers().addTwoNumbers(l1, l2);
+		ListNode resultNode = new M2_AddTwoNumbers().addTwoNumbers(l1, l2);
+		System.out.println(resultNode);
 	}
 
 }
