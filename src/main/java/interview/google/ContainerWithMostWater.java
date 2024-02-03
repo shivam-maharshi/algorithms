@@ -7,7 +7,7 @@ import org.junit.Test;
 import junit.framework.TestCase;
 
 /**
- * Link: https://www.interviewbit.com/problems/container-with-most-water/
+ * Link: https://www.interviewbit.com/problems/container-with-most-water
  * 
  * @author shivam.maharshi
  */
@@ -35,6 +35,23 @@ public class ContainerWithMostWater extends TestCase {
         x++;
     }
     return r;
+  }
+
+  public int maxArea(int[] height) {
+    int left = 0, right = height.length-1;
+    int maxArea = 0;
+
+    while(right > left) {
+      int currentArea = (right - left) * Math.min(height[left], height[right]);
+      maxArea = Math.max(maxArea, currentArea);
+      if (height[right] < height[left]) {
+        right--;
+      } else {
+        left++;
+      }
+    }
+
+    return maxArea;
   }
 
 }
