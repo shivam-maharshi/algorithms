@@ -1,10 +1,11 @@
 package interview.google;
 
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 
+/**
+ * https://leetcode.com/explore/interview/card/google/59/array-and-strings/3047
+ */
 public class LongestSubstringWithoutRepeatingCharacters {
 
     public int lengthOfLongestSubstring(String s) {

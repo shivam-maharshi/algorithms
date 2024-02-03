@@ -8,7 +8,7 @@ import org.junit.Test;
 import junit.framework.TestCase;
 
 /**
- * Link: https://www.interviewbit.com/problems/3-sum-zero/
+ * Link: https://leetcode.com/explore/interview/card/google/59/array-and-strings/3049
  * 
  * @author shivam.maharshi
  */
