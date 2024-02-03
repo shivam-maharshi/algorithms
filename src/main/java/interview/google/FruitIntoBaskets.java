@@ -12,7 +12,7 @@ public class FruitIntoBaskets {
         int left = 0, maxFruitCount = 0;
         final Map<Integer, Integer> map = new HashMap<>();
 
-        for (int right=0; right<fruits.length; ++right) {
+        for (int right=0; right<fruits.length; right++) {
             map.put(fruits[right], map.getOrDefault(fruits[right], 0) + 1);
 
             while(map.size() > 2) {
