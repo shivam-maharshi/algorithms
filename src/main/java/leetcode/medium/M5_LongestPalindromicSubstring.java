@@ -10,6 +10,31 @@ import java.util.List;
  */
 public class M5_LongestPalindromicSubstring {
 
+  public static String lp(String s) {
+    // This will not work for "cbbd".
+    if (s == null || s.isEmpty() || s.length() == 1)
+      return s;
+
+    int left = 0;
+    int right = 0;
+
+    for (int mid = 1; mid <= s.length()/2; mid++) {
+      int i = 1;
+      while (mid - i >= 0 && mid + i < s.length()) {
+        if (s.charAt(mid -i) == s.charAt(mid + i)) {
+          if (2 * i > right - left) {
+            left = mid - i;
+            right = mid + i;
+          }
+          i++;
+        }
+        break;
+      }
+    }
+
+    return s.substring(left, right);
+  }
+
   public static String longestPalindrome(String s) {
     SuffixTree st = new SuffixTree();
     for (int i = 0; i < s.length(); i++) {

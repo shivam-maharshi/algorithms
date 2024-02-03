@@ -7,7 +7,7 @@ import ds.Union;
  * Detect cycle in an undirected graph via Union Find algorithm using Disjoint
  * Data Set.
  * 
- * Link: http://www.geeksforgeeks.org/union-find/
+ * Link: http://www.geeksforgeeks.org/union-find
  * 
  * @author shivam.maharshi
  */

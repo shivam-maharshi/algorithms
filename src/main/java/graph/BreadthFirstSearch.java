@@ -11,7 +11,7 @@ import ds.State;
 /**
  * Standard Breadth First Search implementation.
  * 
- * Link: http://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/
+ * Link: http://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph
  * 
  * @author shivam.maharshi
  */

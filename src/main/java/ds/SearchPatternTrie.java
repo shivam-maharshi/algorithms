@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * This is also called the radix tree, digital tree or prefix tree.
  * 
- * Link: http://www.geeksforgeeks.org/trie-insert-and-search/
+ * Link: http://www.geeksforgeeks.org/trie-insert-and-search
  * 
  * @author shivam.maharshi
  */

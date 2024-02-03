@@ -7,7 +7,7 @@ import java.util.Stack;
  * Given a Weighted Directed Acyclic Graph (DAG) and a source vertex s in it,
  * find the longest distances from s to all other vertices in the given graph.
  * 
- * Link: http://www.geeksforgeeks.org/find-longest-path-directed-acyclic-graph/
+ * Link: http://www.geeksforgeeks.org/find-longest-path-directed-acyclic-graph
  * 
  * @author shivam.maharshi
  */

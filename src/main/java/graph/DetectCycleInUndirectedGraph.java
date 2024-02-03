@@ -5,7 +5,7 @@ import ds.GraphAdjList;
 /**
  * Given an undirected graph, check whether the graph contains a cycle or not.
  * 
- * Link: http://www.geeksforgeeks.org/detect-cycle-undirected-graph/
+ * Link: http://www.geeksforgeeks.org/detect-cycle-undirected-graph
  * 
  * @author shivam.maharshi
  */

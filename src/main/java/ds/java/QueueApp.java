@@ -8,7 +8,7 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 
 /**
- * Play with the usage of the Java data structures. Examine there behavior.
+ * Play with the usage of the Java data structures. Examine behavior.
  * 
  * @author shivam.maharshi
  */

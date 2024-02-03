@@ -4,7 +4,7 @@ import ds.GraphAdjList;
 
 /**
  * Check if the undirected graph is a tree. An undirected graph is tree if it
- * has following properties. 1) There is no cycle. 2) The graph is connected.
+ * has the following properties. 1) There is no cycle. 2) The graph is connected.
  * 
  * Link: http://geeksquiz.com/check-given-graph-tree/
  * 

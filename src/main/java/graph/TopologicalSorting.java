@@ -10,7 +10,7 @@ import java.util.Stack;
  * order of 0 i.e. no nodes are directed towards it. 2. There must be at least
  * one node that has out order of 0 i.e. it does not direct to any other node.
  * 
- * Link: http://www.geeksforgeeks.org/topological-sorting/
+ * Link: http://www.geeksforgeeks.org/topological-sorting
  * 
  * @author shivam.maharshi
  */

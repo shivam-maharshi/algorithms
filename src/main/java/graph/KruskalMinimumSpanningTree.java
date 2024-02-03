@@ -13,8 +13,7 @@ import ds.Union;
 /**
  * Create a minimum spanning tree for the given graph using Kruskal's algorithm.
  * 
- * Link: http://www.geeksforgeeks.org/greedy-algorithms-set-2-kruskals-minimum-
- * spanning-tree-mst/
+ * Link: http://www.geeksforgeeks.org/greedy-algorithms-set-2-kruskals-minimum-spanning-tree-mst
  * 
  * @author shivam.maharshi
  */

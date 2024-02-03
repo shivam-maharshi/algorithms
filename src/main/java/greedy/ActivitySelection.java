@@ -4,9 +4,7 @@ package greedy;
  * Activity selection. Select the maximum number of activity that a person can
  * do, provided he can do only one activity at a given time.
  * 
- * Link:
- * http://www.geeksforgeeks.org/greedy-algorithms-set-1-activity-selection-
- * problem/
+ * Link: http://www.geeksforgeeks.org/greedy-algorithms-set-1-activity-selection-problem
  * 
  * @author shivam.maharshi
  */

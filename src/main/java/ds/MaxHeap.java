@@ -1,7 +1,11 @@
 package ds;
 
 /**
- * Implementation of a generic Max Heap.
+ * Implementation of a generic Max Heap i.e. every parent node has higher value than its child nodes.
+ * The root element will be at Arr[0]. For any ith node Arr[i]. Left child is stored at index 2i+1
+ * Right child is stored at index 2i+2. Parent is stored at index floor((i-1)/2).
+ * Must be a complete binary tree i.e. no nulls when represented via inorder traversal.
+ * Complete binary trees are balanced.
  * 
  * @author shivam.maharshi
  */
@@ -45,6 +49,7 @@ public class MaxHeap<T extends Comparable<T>> {
 		return arr[2 * index + 1];
 	}
 
+	// Complexity is O(log(n))
 	public void insert(T value) {
 		if (isFull()) {
 			throw new RuntimeException("Can't insert in a full heap.");
@@ -69,6 +74,7 @@ public class MaxHeap<T extends Comparable<T>> {
 		}
 	}
 
+	// Complexity is O(log(n))
 	public T extract() {
 		if (isEmpty()) {
 			throw new RuntimeException("Can't extract from empty heap.");
@@ -76,7 +82,7 @@ public class MaxHeap<T extends Comparable<T>> {
 		T result = arr[1];
 		arr[1] = arr[size];
 		size--;
-		buildHeap();
+		heapify(1);
 		return result;
 	}
 
@@ -99,6 +105,7 @@ public class MaxHeap<T extends Comparable<T>> {
 
 	/**
 	 * Restore the heap property for all nodes.
+	 * Only required if the input array violates heap principles.
 	 * 
 	 * Complexity is O(n * log(n)).
 	 */

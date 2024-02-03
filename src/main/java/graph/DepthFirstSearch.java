@@ -5,7 +5,7 @@ import ds.GraphAdjList;
 /**
  * Standard Depth First Search implementation for various graph representation.
  * 
- * Link: http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/
+ * Link: http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph
  * 
  * @author shivam.maharshi
  */

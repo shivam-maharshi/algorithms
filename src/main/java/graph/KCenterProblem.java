@@ -9,8 +9,7 @@ import java.util.List;
  * warehouse (or ATM) is minimized.
  * 
  * Link:
- * http://www.geeksforgeeks.org/k-centers-problem-set-1-greedy-approximate-
- * algorithm/
+ * http://www.geeksforgeeks.org/k-centers-problem-set-1-greedy-approximate-algorithm
  * 
  * @author shivam.maharshi
  */

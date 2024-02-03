@@ -9,8 +9,7 @@ import java.util.Arrays;
  * Bellman Ford algorithm can be used.
  * 
  * Link:
- * http://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-
- * algorithm/
+ * http://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm
  * 
  * @author shivam.maharshi
  */
