@@ -1,3 +1,5 @@
+[<img src="https://api.gitsponsors.com/api/badge/img?id=45653325" height="20">](https://api.gitsponsors.com/api/badge/link?p=ZQ4Cyinx02lzspXHan3lddCj7MJDibicmlJjf9kLy/DiXEpkmwVGk+ZaZPXlnb3H)
+
 # [Algorithms](https://github.com/shivam-maharshi/algorithms)
 [![Build Status](https://travis-ci.org/shivam-maharshi/algorithms.svg?branch=master)](https://travis-ci.org/shivam-maharshi/algorithms)
 
